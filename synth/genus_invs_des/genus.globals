@@ -1,0 +1,23 @@
+#####################################################################
+#
+# Innovus input globals file
+# Created by Genus(TM) Synthesis Solution on 03/04/2026 11:39:45
+#
+#####################################################################
+set cwd /home/nfs/shanghonglin/project/synth
+setUserDataValue init_verilog genus_invs_des/genus.v
+setUserDataValue init_design_netlisttype Verilog
+setUserDataValue init_design_settop 1
+setUserDataValue init_top_cell et4351
+setUserDataValue init_mmmc_file genus_invs_des/genus.mmode.tcl
+setUserDataValue init_mmmc_version 1
+setUserDataValue init_lef_file {/data/Cadence/gpdk045_v60/gsclib045_svt_v4.7/gsclib045_tech/lef/gsclib045_tech.lef /data/Cadence/gpdk045_v60/gsclib045_svt_v4.7/gsclib045/lef/gsclib045_macro.lef /data/Cadence/gpdk045_v60/Synopsys_sram/saed32sram.lef}
+setUserDataValue fp_core_cntl aspect
+setUserDataValue fp_aspect_ratio 1.0000
+setUserDataValue extract_shrink_factor 1.0
+setUserDataValue init_assign_buffer 0
+
+
+setUserDataValue init_cpf_file {}
+
+
