@@ -9,7 +9,7 @@ TWIDDLES = []
 
 
 for m in range(1, round(math.log2(MAX_N_PER_FFT)) + 1):
-    stage = 1 << m  # m = 2, 4, 8, ..., n
+    stage = 1 << m  # stage = 2, 4, 8, ..., n
     W = cmath.exp(-2j * cmath.pi / stage)
     W_scaled = complex(round(W.real * (1<<SCALE)), round(W.imag * (1<<SCALE)))
     TWIDDLES.append(W_scaled)

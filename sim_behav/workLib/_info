@@ -10,16 +10,16 @@ z2
 cModel Technology
 Z0 d/home/nfs/shanghonglin/project/sim_behav
 T_opt
-!s110 1772620009
-Vjf@EcZCOYbK;:Z^BZYGXF0
+!s110 1772719058
+Vlc2AfZ;1izB_]WNfY7^mZ3
 04 9 4 work testbench fast 0
-=1-005056968d51-69a808e8-c0912-2bf335
+=1-005056968d51-69a98bd1-adddd-22ee64
 o-quiet -auto_acc_if_foreign -work work
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.4;71
 vaccelerator
-Z2 !s110 1772620006
+Z2 !s110 1772719055
 !i10b 1
 !s100 0]>@Z7bzjgW:XDnEAz4_41
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -35,7 +35,7 @@ Z6 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z7 !s108 1772620006.000000
+Z7 !s108 1772719055.000000
 Z8 !s107 ../src/design/et4351.v|../src/design/picorv32.v|../src/design/simpleuart.v|../src/design/spimemio.v|../src/design/picosoc.v|../src/design/accelerator_mem.v|../src/design/accelerator_fft.v|../src/design/accelerator.v|
 Z9 !s90 ../src/design/accelerator.v|../src/design/accelerator_fft.v|../src/design/accelerator_mem.v|../src/design/picosoc.v|../src/design/spimemio.v|../src/design/simpleuart.v|../src/design/picorv32.v|../src/design/et4351.v|+incdir+../src/|-timescale|1ns/1ps|
 !i113 0
@@ -475,7 +475,7 @@ R10
 R11
 R1
 vSRAM1RW1024x8
-Z20 !s110 1772620005
+Z20 !s110 1772719054
 !i10b 1
 !s100 X197NjCVbXA[j9][L0PHC2
 R3
@@ -491,7 +491,7 @@ R6
 r1
 !s85 0
 31
-Z24 !s108 1772620005.000000
+Z24 !s108 1772719054.000000
 Z25 !s107 /data/Cadence/gpdk045_v60/Synopsys_sram/saed32sram.v|
 Z26 !s90 /data/Cadence/gpdk045_v60/Synopsys_sram/saed32sram.v|
 !i113 0
@@ -883,7 +883,7 @@ R27
 R1
 n@s@r@a@m1@r@w256x8
 vSRAM1RW256x8_1bit
-R20
+R2
 !i10b 1
 !s100 o??ZnC1keaVDN<1Y`kmY81
 R3
@@ -2156,7 +2156,7 @@ R1
 n@s@r@a@m2@r@w64x8_1bit
 vtestbench
 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1772620007
+R2
 !i10b 1
 !s100 4@e9aJ`f23=?jnCiIAnXN2
 R3
