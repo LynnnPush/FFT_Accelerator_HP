@@ -1,0 +1,123 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.11-s130_1, built Thu Aug 19 16:59:56 PDT 2021
+Options:	-log extLogDir/IQuantus_06-Mar-2026_21:26:11_75371_CcRtpp/extr.et4351.0.parallel_processing_1.log -noMultiCpuLicCheckout -DP -x 0001B027D7... -edpId 1 -edpHost et4351.ewi.tudelft.nl -edpPort 39459 -nowin -nologv -init /home/nfs/shanghonglin/project/pnr/.75371_soce_slave_1 
+Date:		Fri Mar  6 21:26:34 2026
+Host:		et4351.ewi.tudelft.nl (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (1core*64cpus*AMD EPYC 7702P 64-Core Processor 512KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		[21:26:34.316818] Configured Lic search path (20.02-p002): 27012@flexserv1.tudelft.nl:27017@flexserv1.tudelft.nl
+
+		Running innovus (-x) with Innovus_Impl_System capability.
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing file "/home/nfs/shanghonglin/project/pnr/.75371_soce_slave_1" ...
+<CMD> setLimitedAccessFeature invsHierModuleModel 1
+**WARN: (IMPSE-524):	The feature invsHierModuleModel is now a Production feature. The use of 'setLimitedAccessFeature invsHierModuleModel 1' is no longer required.
+EDP: start server on et4351.ewi.tudelft.nl:51041
+Fri Mar  6 21:26:54 2026: Successfully connected to the master.
+sending server data to client et4351.ewi.tudelft.nl 51041 1 190268 
+
+Started sub-activity 1 out of 4 for Extraction...
+
+INFO (EXTIQUANTUS-101) : 
+  Integrated Quantus - 64-bit Parasitic Extractor - Version 20.1.2-s578
+-------------------------------------------------------------------------
+               Copyright 2021 Cadence Design Systems, Inc.
+
+
+INFO (EXTIQUANTUS-103) : Starting at 2026-Mar-06 21:26:55 (2026-Mar-06 20:26:55 GMT).
+
+INFO (EXTIQUANTUS-159) : Loading technology data from file:
+ 
+/data/Cadence/gpdk045_v60/gsclib045_svt_v4.7/gsclib045_tech/qrc/qx/gpdk045.tch
+
+INFO (EXTIQUANTUS-289) : Loading RCgen extraction models from file:
+ 
+/data/Cadence/gpdk045_v60/gsclib045_svt_v4.7/gsclib045_tech/qrc/qx/gpdk045.tch
+
+INFO (EXTIQUANTUS-345) : Checking Command/Tech/License Files. 
+
+INFO (EXTIQUANTUS-105) : Starting design extraction....
+
+INFO (EXTIQUANTUS-282) : Checking Command/Tech Files. 
+
+INFO (EXTIQUANTUS-277) : Manufacturing Data Information :- 
+  DEF/GDS file 
+    does NOT contain MetalFill data. 
+  Techfile  
+    does NOT contain WEE data.     
+    does NOT contain Erosion data t=f( density ) 
+    does NOT contain R(w) data.    
+    does NOT contain R(w, s) data.  
+    does NOT contain TC(w) data.    
+    does NOT contain T/B enlargement data. 
+    does     contain Floating Metal Fill models. 
+
+INFO (EXTIQUANTUS-287) : Capacitance Models Information :- 
+ ICECAPS models are not available. 
+ RCgen   models are     available. 
+ This IQuantus session uses RCgen models.
+
+INFO (EXTIQUANTUS-286) : RCs effects computed for this session include :- 
+ MetalFill        : OFF 
+ WEE Effects      : n/a 
+ Erosion Effects  : n/a t=f( density ) 
+ T/B Enlargements : n/a 
+ R(w) Effects     : n/a 
+ R(w,s) Effects   : n/a 
+ TC(w) Effects     : n/a 
+Some effects indicate n/a because of non-availability of relevantinput data
+(or) requested to be off (and/or) usage of older Icecaps models.
+
+INFO (EXTHPY-103) : Extracting capacitance values.
+
+INFO (EXTHPY-104) :    0%
+
+INFO (EXTHPY-104) :    9%
+
+INFO (EXTHPY-104) :    18%
+
+INFO (EXTHPY-104) :    27%
+
+INFO (EXTHPY-104) :    36%
+
+INFO (EXTHPY-104) :    45%
+
+INFO (EXTHPY-104) :    55%
+
+INFO (EXTHPY-104) :    64%
+
+INFO (EXTHPY-104) :    73%
+
+INFO (EXTHPY-104) :    82%
+
+INFO (EXTHPY-104) :    91%
+
+INFO (EXTHPY-104) :    100%
+
+Ending at 2026-Mar-06 21:27:33 (2026-Mar-06 20:27:33 GMT).
+  Executed by:           shanghonglin
+  Execution host:        et4351.ewi.tudelft.nl
+  Run duration:          00:00:38 CPU time, 00:00:38 clock time
+  Memory used:           8333 Mb
+
+  Warning messages:      0
+  Error messages:        0
+  Fatal error messages:  0
+
+Exit code 0.
+IQuantus exited successfully.
+Sub-activity 1 of Extraction Successfully Completed.
+
+*** Memory Usage v#1 (Current mem = 4511.332M, initial mem = 1330.535M) ***
+*** Message Summary: 1 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:54.7, real=0:01:07, mem=4511.3M) ---

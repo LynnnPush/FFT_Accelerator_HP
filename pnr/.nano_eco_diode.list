@@ -1,0 +1,3 @@
+FORMATVERSION 1
+ADDINST ANTENNA accel/fft/DIODE_1 1 addPortAsNeeded
+INSTTERM A accel/fft/FE_PHN27059_tw_im_0__30 -

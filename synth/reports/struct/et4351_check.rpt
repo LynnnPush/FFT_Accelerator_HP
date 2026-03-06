@@ -55,12 +55,12 @@ Encountered an assign statement at subport '/designs/et4351/instances_hier/accel
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[7]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
 Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_3_/subports_out/soc_i' in module bidir_buf
 Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_3_/subports_out/io' in module bidir_buf
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/soc_i' in module bidir_buf_2035
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/io' in module bidir_buf_2035
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/soc_i' in module bidir_buf_2036
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/io' in module bidir_buf_2036
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/soc_i' in module bidir_buf_2037
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/io' in module bidir_buf_2037
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/soc_i' in module bidir_buf_2301
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/io' in module bidir_buf_2301
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/soc_i' in module bidir_buf_2302
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/io' in module bidir_buf_2302
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/soc_i' in module bidir_buf_2303
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/io' in module bidir_buf_2303
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/trap' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/mem_instr' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/mem_addr[1]' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
@@ -394,7 +394,7 @@ design 'et4351' has the following constant input combinational pin(s)
 /designs/et4351/instances_hier/accel/instances_comb/g9328/pins_in/A0
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_comb/g134963/pins_in/B
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_comb/g7331/pins_in/A
-/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk1.pcpi_mul/instances_comb/g15216/pins_in/A0
+/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk1.pcpi_mul/instances_comb/g15212/pins_in/A0
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/instances_comb/g3804/pins_in/A1
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/instances_comb/g3807/pins_in/B0
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/instances_comb/g3816/pins_in/A1

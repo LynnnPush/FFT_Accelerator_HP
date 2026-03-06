@@ -10,16 +10,16 @@ z2
 cModel Technology
 Z0 d/home/nfs/shanghonglin/project/sim_behav
 T_opt
-!s110 1772719058
-Vlc2AfZ;1izB_]WNfY7^mZ3
+!s110 1772824523
+VgNoH>7]YWLhQO]g1E=Dmo2
 04 9 4 work testbench fast 0
-=1-005056968d51-69a98bd1-adddd-22ee64
+=1-005056968d51-69ab27cb-626ff-3fc515
 o-quiet -auto_acc_if_foreign -work work
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.4;71
 vaccelerator
-Z2 !s110 1772719055
+Z2 !s110 1772824520
 !i10b 1
 !s100 0]>@Z7bzjgW:XDnEAz4_41
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -35,7 +35,7 @@ Z6 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z7 !s108 1772719055.000000
+Z7 !s108 1772824520.000000
 Z8 !s107 ../src/design/et4351.v|../src/design/picorv32.v|../src/design/simpleuart.v|../src/design/spimemio.v|../src/design/picosoc.v|../src/design/accelerator_mem.v|../src/design/accelerator_fft.v|../src/design/accelerator.v|
 Z9 !s90 ../src/design/accelerator.v|../src/design/accelerator_fft.v|../src/design/accelerator_mem.v|../src/design/picosoc.v|../src/design/spimemio.v|../src/design/simpleuart.v|../src/design/picorv32.v|../src/design/et4351.v|+incdir+../src/|-timescale|1ns/1ps|
 !i113 0
@@ -45,15 +45,15 @@ R1
 vaccelerator_fft
 R2
 !i10b 1
-!s100 8VhbcG<QWIedm8U2d>Y;R0
+!s100 Z?`:>b>_ThoQ76>^KR;4Q2
 R3
-I<ib]RhHaZNIaf6k1amT8n1
+I4O]>6`O_MNg^JdI17DoOY3
 R0
-R4
+w1772811600
 8../src/design/accelerator_fft.v
 F../src/design/accelerator_fft.v
 !i122 1
-L0 1 322
+L0 20 380
 R5
 R6
 r1
@@ -403,7 +403,7 @@ R10
 R11
 R1
 vspiflash
-R2
+Z18 !s110 1772824521
 !i10b 1
 !s100 ?zf4bIiBV5bAZDNzdUWZ?2
 R3
@@ -434,8 +434,8 @@ R3
 I6HUFG1l]T?XYmdo2Pd?J63
 R0
 R4
-Z18 8../src/design/spimemio.v
-Z19 F../src/design/spimemio.v
+Z19 8../src/design/spimemio.v
+Z20 F../src/design/spimemio.v
 !i122 1
 L0 20 370
 R5
@@ -458,8 +458,8 @@ R3
 IBIAGPJ=>7@@6z3iAg:A000
 R0
 R4
-R18
 R19
+R20
 !i122 1
 L0 391 202
 R5
@@ -475,7 +475,7 @@ R10
 R11
 R1
 vSRAM1RW1024x8
-Z20 !s110 1772719054
+R2
 !i10b 1
 !s100 X197NjCVbXA[j9][L0PHC2
 R3
@@ -491,15 +491,15 @@ R6
 r1
 !s85 0
 31
-Z24 !s108 1772719054.000000
-Z25 !s107 /data/Cadence/gpdk045_v60/Synopsys_sram/saed32sram.v|
-Z26 !s90 /data/Cadence/gpdk045_v60/Synopsys_sram/saed32sram.v|
+R7
+Z24 !s107 /data/Cadence/gpdk045_v60/Synopsys_sram/saed32sram.v|
+Z25 !s90 /data/Cadence/gpdk045_v60/Synopsys_sram/saed32sram.v|
 !i113 0
-Z27 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z26 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 n@s@r@a@m1@r@w1024x8
 vSRAM1RW1024x8_1bit
-R20
+R2
 !i10b 1
 !s100 ^2adN`zNKCb29::F4`UVK1
 R3
@@ -515,15 +515,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w1024x8_1bit
 vSRAM1RW128x46
-R20
+R2
 !i10b 1
 !s100 XKV31fPiV46<68@Q2?[fE2
 R3
@@ -539,15 +539,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w128x46
 vSRAM1RW128x46_1bit
-R20
+R2
 !i10b 1
 !s100 <8U[6VBG;j]Ia[H6JWle=0
 R3
@@ -563,15 +563,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w128x46_1bit
 vSRAM1RW128x48
-R20
+R2
 !i10b 1
 !s100 UTDzfGRSBk@HB>bcJIKN`0
 R3
@@ -587,15 +587,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w128x48
 vSRAM1RW128x48_1bit
-R20
+R2
 !i10b 1
 !s100 YSBA0CX28NRmIEEkG6QiP2
 R3
@@ -611,15 +611,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w128x48_1bit
 vSRAM1RW128x8
-R20
+R2
 !i10b 1
 !s100 al<0^UYjNl?G`1k[jJ6IB1
 R3
@@ -635,15 +635,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w128x8
 vSRAM1RW128x8_1bit
-R20
+R2
 !i10b 1
 !s100 UKTD5R2gPPOELg8^8@kL92
 R3
@@ -659,15 +659,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w128x8_1bit
 vSRAM1RW256x128
-R20
+R2
 !i10b 1
 !s100 TBZDIPT@BQ5N;MPomHdeb2
 R3
@@ -683,15 +683,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w256x128
 vSRAM1RW256x128_1bit
-R20
+R2
 !i10b 1
 !s100 WaY7aSITZ@AaW]Deao1a13
 R3
@@ -707,15 +707,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w256x128_1bit
 vSRAM1RW256x32
-R20
+R2
 !i10b 1
 !s100 `hUCT7@N3DP37XR?cnJ]d0
 R3
@@ -731,15 +731,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w256x32
 vSRAM1RW256x32_1bit
-R20
+R2
 !i10b 1
 !s100 z<BIz_0oW:C6oLVEVePno2
 R3
@@ -755,15 +755,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w256x32_1bit
 vSRAM1RW256x46
-R20
+R2
 !i10b 1
 !s100 HbGzl`bUX[N3Gnnj35B^b1
 R3
@@ -779,15 +779,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w256x46
 vSRAM1RW256x46_1bit
-R20
+R2
 !i10b 1
 !s100 KfH33YlTJ@hRCJdW=:bSm1
 R3
@@ -803,15 +803,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w256x46_1bit
 vSRAM1RW256x48
-R20
+R2
 !i10b 1
 !s100 T?LPYiRG?27P`6JTlPG=30
 R3
@@ -827,15 +827,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w256x48
 vSRAM1RW256x48_1bit
-R20
+R2
 !i10b 1
 !s100 RSIDO:BLEf[P<NkYeczLe3
 R3
@@ -851,15 +851,15 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w256x48_1bit
 vSRAM1RW256x8
-R20
+R2
 !i10b 1
 !s100 U>RDBfj6_zDZZBLA^=N:X0
 R3
@@ -875,11 +875,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w256x8
 vSRAM1RW256x8_1bit
@@ -899,11 +899,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w256x8_1bit
 vSRAM1RW32x50
@@ -923,11 +923,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w32x50
 vSRAM1RW32x50_1bit
@@ -947,11 +947,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w32x50_1bit
 vSRAM1RW512x128
@@ -971,11 +971,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w512x128
 vSRAM1RW512x128_1bit
@@ -995,11 +995,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w512x128_1bit
 vSRAM1RW512x32
@@ -1019,11 +1019,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w512x32
 vSRAM1RW512x32_1bit
@@ -1043,11 +1043,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w512x32_1bit
 vSRAM1RW512x8
@@ -1067,11 +1067,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w512x8
 vSRAM1RW512x8_1bit
@@ -1091,11 +1091,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w512x8_1bit
 vSRAM1RW64x128
@@ -1115,11 +1115,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w64x128
 vSRAM1RW64x128_1bit
@@ -1139,11 +1139,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w64x128_1bit
 vSRAM1RW64x32
@@ -1163,11 +1163,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w64x32
 vSRAM1RW64x32_1bit
@@ -1187,11 +1187,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w64x32_1bit
 vSRAM1RW64x34
@@ -1211,11 +1211,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w64x34
 vSRAM1RW64x34_1bit
@@ -1235,11 +1235,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w64x34_1bit
 vSRAM1RW64x8
@@ -1259,11 +1259,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w64x8
 vSRAM1RW64x8_1bit
@@ -1283,11 +1283,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m1@r@w64x8_1bit
 vSRAM2RW128x16
@@ -1307,11 +1307,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w128x16
 vSRAM2RW128x16_1bit
@@ -1331,11 +1331,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w128x16_1bit
 vSRAM2RW128x32
@@ -1355,11 +1355,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w128x32
 vSRAM2RW128x32_1bit
@@ -1379,11 +1379,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w128x32_1bit
 vSRAM2RW128x4
@@ -1403,11 +1403,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w128x4
 vSRAM2RW128x4_1bit
@@ -1427,11 +1427,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w128x4_1bit
 vSRAM2RW128x8
@@ -1451,11 +1451,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w128x8
 vSRAM2RW128x8_1bit
@@ -1475,11 +1475,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w128x8_1bit
 vSRAM2RW16x16
@@ -1499,11 +1499,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w16x16
 vSRAM2RW16x16_1bit
@@ -1523,11 +1523,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w16x16_1bit
 vSRAM2RW16x32
@@ -1547,11 +1547,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w16x32
 vSRAM2RW16x32_1bit
@@ -1571,11 +1571,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w16x32_1bit
 vSRAM2RW16x4
@@ -1595,11 +1595,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w16x4
 vSRAM2RW16x4_1bit
@@ -1619,11 +1619,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w16x4_1bit
 vSRAM2RW16x8
@@ -1643,11 +1643,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w16x8
 vSRAM2RW16x8_1bit
@@ -1667,11 +1667,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w16x8_1bit
 vSRAM2RW32x16
@@ -1691,11 +1691,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x16
 vSRAM2RW32x16_1bit
@@ -1715,11 +1715,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x16_1bit
 vSRAM2RW32x22
@@ -1739,11 +1739,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x22
 vSRAM2RW32x22_1bit
@@ -1763,11 +1763,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x22_1bit
 vSRAM2RW32x32
@@ -1787,11 +1787,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x32
 vSRAM2RW32x32_1bit
@@ -1811,11 +1811,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x32_1bit
 vSRAM2RW32x39
@@ -1835,11 +1835,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x39
 vSRAM2RW32x39_1bit
@@ -1859,11 +1859,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x39_1bit
 vSRAM2RW32x4
@@ -1883,11 +1883,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x4
 vSRAM2RW32x4_1bit
@@ -1907,11 +1907,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x4_1bit
 vSRAM2RW32x8
@@ -1931,11 +1931,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x8
 vSRAM2RW32x8_1bit
@@ -1955,11 +1955,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w32x8_1bit
 vSRAM2RW64x16
@@ -1979,11 +1979,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w64x16
 vSRAM2RW64x16_1bit
@@ -2003,11 +2003,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w64x16_1bit
 vSRAM2RW64x32
@@ -2027,11 +2027,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w64x32
 vSRAM2RW64x32_1bit
@@ -2051,11 +2051,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w64x32_1bit
 vSRAM2RW64x4
@@ -2075,11 +2075,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w64x4
 vSRAM2RW64x4_1bit
@@ -2099,11 +2099,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w64x4_1bit
 vSRAM2RW64x8
@@ -2123,11 +2123,11 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w64x8
 vSRAM2RW64x8_1bit
@@ -2147,16 +2147,16 @@ R6
 r1
 !s85 0
 31
+R7
 R24
 R25
-R26
 !i113 0
-R27
+R26
 R1
 n@s@r@a@m2@r@w64x8_1bit
 vtestbench
 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-R2
+R18
 !i10b 1
 !s100 4@e9aJ`f23=?jnCiIAnXN2
 R3
@@ -2173,7 +2173,7 @@ R6
 r1
 !s85 0
 31
-R7
+!s108 1772824521.000000
 !s107 ../src/testbench/tb_et4351.sv|
 !s90 -sv|../src/testbench/tb_et4351.sv|+incdir+../src/|+define+BEHAV=1|-timescale|1ns/1ps|
 !i113 0

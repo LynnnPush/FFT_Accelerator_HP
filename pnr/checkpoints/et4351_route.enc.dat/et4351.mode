@@ -50,10 +50,11 @@ catch {setNanoRouteMode -quiet -routeReInsertFillerCellList "FILL1 FILL2 FILL4 F
 catch {setNanoRouteMode -quiet -routeReInsertFillerCellListFromFile false}
 catch {setNanoRouteMode -quiet -routeSiEffort "high"}
 catch {setNanoRouteMode -quiet -routeTdrEffort 5}
+catch {setNanoRouteMode -quiet -routeWithEco false}
 catch {setNanoRouteMode -quiet -routeWithSiDriven true}
 catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix false}
 catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
-catch {setNanoRouteMode -quiet -timingEngine ".timing_file_2925634.tif.gz"}
+catch {setNanoRouteMode -quiet -timingEngine ".timing_file_75371.tif.gz"}
 
 catch { setPlaceMode -place_global_activity_power_driven true }
 catch { setPlaceMode -place_global_activity_power_driven_effort standard }
