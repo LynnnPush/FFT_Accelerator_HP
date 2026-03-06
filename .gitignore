@@ -1,2 +1,4 @@
 *.gds
 *.qpg
+innovus.log*
+*.tif.gz
