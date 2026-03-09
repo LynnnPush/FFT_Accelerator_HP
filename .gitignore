@@ -15,6 +15,7 @@ innovus.log*
 *.shm/
 *.vpd
 *.wlf
+workLib/
 
 # Compiled databases, libraries, and binaries
 INCA_libs/
@@ -31,6 +32,7 @@ work/
 # PnR databases and intermediate states
 *.enc
 *.enc.dat/
+genus.cmd*
 
 # Parasitics and Timing Formats (Huge files)
 *.spef
