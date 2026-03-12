@@ -25,120 +25,97 @@ No unloaded combinational element in 'et4351'
 
  Assigns
  ------- 
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[2]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[1]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[0]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[31]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[30]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[29]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[28]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[27]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[26]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[25]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[24]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[23]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[22]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[21]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[20]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[19]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[18]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[17]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[16]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[15]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[14]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[13]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[12]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[11]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[10]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[9]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[8]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[7]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1312_30/subports_out/Z[0]' in module add_unsigned_2473
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[2]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[1]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[0]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[31]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[30]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[29]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[28]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[27]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[26]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[25]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[24]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[23]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[22]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[21]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[20]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[19]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[18]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[17]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[16]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[15]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[14]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[13]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[12]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[11]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[10]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[9]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[8]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[7]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[6]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1312_30/subports_out/Z[0]' in module add_unsigned_2426
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/ADD_UNS_OP/subports_out/Z[0]' in module add_unsigned_252_6
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1810_23/subports_out/Z[0]' in module add_unsigned_252_6_2874
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1810_23/subports_out/Z[0]' in module add_unsigned_252_6_2821
 Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_3_/subports_out/soc_i' in module bidir_buf
 Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_3_/subports_out/io' in module bidir_buf
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/soc_i' in module bidir_buf_2487
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/io' in module bidir_buf_2487
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/soc_i' in module bidir_buf_2488
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/io' in module bidir_buf_2488
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/soc_i' in module bidir_buf_2489
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/io' in module bidir_buf_2489
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[11]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[10]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[9]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[8]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[7]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[6]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[5]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[4]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[3]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[2]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[1]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/subports_out/out_0[0]' in module csa_tree_add_153_48_group_33
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[11]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[10]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[9]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[8]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[7]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[6]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[5]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[4]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[3]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[2]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[1]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/subports_out/out_0[0]' in module csa_tree_add_210_56_group_31
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[11]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[10]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[9]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[8]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[7]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[6]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[5]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[4]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[3]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[2]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[1]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/subports_out/out_0[0]' in module csa_tree_add_225_56_group_29
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[11]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[10]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[9]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[8]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[7]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[6]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[5]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[4]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[3]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[2]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[1]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/subports_out/out_0[0]' in module csa_tree_sub_152_48_group_21
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[11]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[10]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[9]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[8]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[7]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[6]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[5]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[4]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[3]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[2]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[1]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/subports_out/out_0[0]' in module csa_tree_sub_209_56_group_19
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[11]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[10]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[9]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[8]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[7]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[6]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[5]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[4]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[3]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[2]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[1]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/subports_out/out_0[0]' in module csa_tree_sub_224_56_group_17
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/dec_sub_1445_19/subports_out/Z[0]' in module decrement_unsigned_21118_22111
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/inc_add_1568_34/subports_out/Z[0]' in module increment_unsigned_20829_22117
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_118_40/subports_out/Z[0]' in module increment_unsigned_23548_23700
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/soc_i' in module bidir_buf_2440
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/io' in module bidir_buf_2440
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/soc_i' in module bidir_buf_2441
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/io' in module bidir_buf_2441
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/soc_i' in module bidir_buf_2442
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/io' in module bidir_buf_2442
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[11]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[10]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[9]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[8]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[7]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[6]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[5]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[4]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[3]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[2]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[1]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_191_56_groupi/subports_out/out_0[0]' in module csa_tree_add_191_56_group_20
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[11]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[10]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[9]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[8]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[7]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[6]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[5]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[4]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[3]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[2]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[1]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_206_56_groupi/subports_out/out_0[0]' in module csa_tree_add_206_56_group_18
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[11]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[10]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[9]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[8]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[7]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[6]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[5]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[4]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[3]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[2]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[1]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_190_56_groupi/subports_out/out_0[0]' in module csa_tree_sub_190_56_group_12
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[11]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[10]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[9]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[8]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[7]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[6]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[5]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[4]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[3]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[2]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[1]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_205_56_groupi/subports_out/out_0[0]' in module csa_tree_sub_205_56_group_10
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/dec_sub_1445_19/subports_out/Z[0]' in module decrement_unsigned_14793_15786
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/inc_add_1568_34/subports_out/Z[0]' in module increment_unsigned_14504_15792
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_118_40/subports_out/Z[0]' in module increment_unsigned_17273_17425
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/trap' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/mem_instr' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/mem_addr[1]' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
@@ -432,9 +409,9 @@ Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/i
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/subports_out/cfgreg_do[0]' in module spimemio
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/subports_out/dout_tag[3]' in module spimemio_xfer
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/subports_out/flash_io3_oe' in module spimemio_xfer
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2510_60/subports_out/Z[0]' in module sub_unsigned_2482
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2529_27_Y_minus_2531_27/subports_out/Z[0]' in module sub_unsigned_2482_2877
-Total number of assign statements in design 'et4351' : 409
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2510_60/subports_out/Z[0]' in module sub_unsigned_2435
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2529_27_Y_minus_2531_27/subports_out/Z[0]' in module sub_unsigned_2435_2826
+Total number of assign statements in design 'et4351' : 386
 
  Undriven Port(s)/Pin(s)
  ------------------------
@@ -490,151 +467,32 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/soc/pins_in/irq_5 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/pins_in/irq_6 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/pins_in/irq_7 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/resetn 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_0[20] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_153_48_groupi/pins_in/in_2[20] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_1[20] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_210_56_groupi/pins_in/in_3[20] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_1[20] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_add_225_56_groupi/pins_in/in_3[20] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_0[20] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_152_48_groupi/pins_in/in_2[20] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_1[20] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_209_56_groupi/pins_in/in_3[20] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_1[20] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[23] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[22] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[21] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/csa_tree_sub_224_56_groupi/pins_in/in_3[20] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[31] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[30] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[29] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[28] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[27] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[26] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[25] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[24] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[23] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[22] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[21] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[20] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[19] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[18] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[17] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[16] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[15] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[14] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[13] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[12] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[11] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[10] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[9] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[8] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[7] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[6] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/ADD_UNS_OP/pins_in/A[0] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/ADD_UNS_OP/pins_in/B[31] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/ADD_UNS_OP/pins_in/B[30] 	 (fanout : 0)
@@ -821,7 +679,7 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_118_40/pins_in/CI 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/pins_in/din_tag[3] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/pins_in/din_cont 	 (fanout : 0)
-Total number of constant hierarchical pins in design 'et4351' : 336
+Total number of constant hierarchical pins in design 'et4351' : 217
 
 No constant connected ports in design 'et4351'
 
@@ -958,7 +816,7 @@ Empty Modules                                0
 Unloaded Port(s)                             0
 Unloaded Sequential Pin(s)                   0
 Unloaded Combinational Pin(s)                0
-Assigns                                    409
+Assigns                                    386
 Undriven Port(s)                             0
 Undriven Leaf Pin(s)                         0
 Undriven hierarchical pin(s)                 0
@@ -968,7 +826,7 @@ Multidriven hierarchical Pin(s)              0
 Multidriven unloaded net(s)                  0
 Constant Port(s)                             0
 Constant Leaf Pin(s)                         8
-Constant hierarchical Pin(s)               336
+Constant hierarchical Pin(s)               217
 Preserved leaf instance(s)                   4
 Preserved hierarchical instance(s)           0
 Feedthrough Modules(s)                       0

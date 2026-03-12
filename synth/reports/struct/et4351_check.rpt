@@ -25,42 +25,43 @@ No unloaded combinational element in 'et4351'
 
  Assigns
  ------- 
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[2]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[1]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[0]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[31]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[30]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[29]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[28]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[27]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[26]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[25]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[24]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[23]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[22]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[21]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[20]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[19]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[18]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[17]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[16]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[15]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[14]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[13]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[12]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[11]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[10]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[9]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[8]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[7]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH7
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[2]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[1]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb[0]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[31]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[30]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[29]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[28]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[27]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[26]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[25]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[24]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[23]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[22]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[21]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[20]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[19]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[18]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[17]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[16]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[15]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[14]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[13]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[12]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[11]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[10]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[9]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[8]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[7]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_addr[6]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
 Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_3_/subports_out/soc_i' in module bidir_buf
 Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_3_/subports_out/io' in module bidir_buf
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/soc_i' in module bidir_buf_2487
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/io' in module bidir_buf_2487
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/soc_i' in module bidir_buf_2488
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/io' in module bidir_buf_2488
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/soc_i' in module bidir_buf_2489
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/io' in module bidir_buf_2489
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/soc_i' in module bidir_buf_2440
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/io' in module bidir_buf_2440
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/soc_i' in module bidir_buf_2441
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/io' in module bidir_buf_2441
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/soc_i' in module bidir_buf_2442
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/io' in module bidir_buf_2442
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/trap' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/mem_instr' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/mem_addr[1]' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
@@ -354,7 +355,7 @@ Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/i
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/subports_out/cfgreg_do[0]' in module spimemio
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/subports_out/dout_tag[3]' in module spimemio_xfer
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/subports_out/flash_io3_oe' in module spimemio_xfer
-Total number of assign statements in design 'et4351' : 329
+Total number of assign statements in design 'et4351' : 330
 
  Undriven Port(s)/Pin(s)
  ------------------------
@@ -391,7 +392,7 @@ No multidriven unloaded nets in 'et4351'
   Constant Pin(s)
   ----------------
 design 'et4351' has the following constant input combinational pin(s)
-/designs/et4351/instances_hier/accel/instances_comb/g9328/pins_in/A0
+/designs/et4351/instances_hier/accel/instances_comb/g54012/pins_in/A0
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_comb/g7331/pins_in/A
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk1.pcpi_mul/instances_comb/g15212/pins_in/A0
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/instances_comb/g3804/pins_in/A1
@@ -425,7 +426,32 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/soc/pins_in/irq_5 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/pins_in/irq_6 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/pins_in/irq_7 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/resetn 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[31] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[30] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[29] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[28] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[27] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[26] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[25] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[24] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[23] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[22] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[21] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[20] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[19] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[18] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[17] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[16] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[15] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[14] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[13] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[12] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[11] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[10] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[9] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[8] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[7] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[6] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk1.pcpi_mul/pins_in/pcpi_insn[24] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk1.pcpi_mul/pins_in/pcpi_insn[23] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk1.pcpi_mul/pins_in/pcpi_insn[22] 	 (fanout : 0)
@@ -587,7 +613,7 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/pins_in/cfgreg_di[6] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/pins_in/din_tag[3] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/pins_in/din_cont 	 (fanout : 0)
-Total number of constant hierarchical pins in design 'et4351' : 167
+Total number of constant hierarchical pins in design 'et4351' : 192
 
 No constant connected ports in design 'et4351'
 
@@ -724,7 +750,7 @@ Empty Modules                                0
 Unloaded Port(s)                             0
 Unloaded Sequential Pin(s)                   0
 Unloaded Combinational Pin(s)                0
-Assigns                                    329
+Assigns                                    330
 Undriven Port(s)                             0
 Undriven Leaf Pin(s)                         0
 Undriven hierarchical pin(s)                 0
@@ -734,7 +760,7 @@ Multidriven hierarchical Pin(s)              0
 Multidriven unloaded net(s)                  0
 Constant Port(s)                             0
 Constant Leaf Pin(s)                        23
-Constant hierarchical Pin(s)               167
+Constant hierarchical Pin(s)               192
 Preserved leaf instance(s)                   4
 Preserved hierarchical instance(s)           0
 Feedthrough Modules(s)                       0

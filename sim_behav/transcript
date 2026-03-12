@@ -1,5 +1,5 @@
 # vsim testbench -c -do "./scripts/run.cmd" -t 10ns "+firmware=../firmware/accel_audio.hex" "+fft_data=../firmware/fft_data.hex" "+is_sim_behav=1" 
-# Start time: 19:02:59 on Mar 09,2026
+# Start time: 12:27:10 on Mar 12,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: ../src/design/picorv32.v(386): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
 # ** Warning: ../src/design/picorv32.v(388): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
@@ -35,47 +35,47 @@
 # [
 #   0 + 0j,
 #   -2 + 12j,
-#   -39 + 37j,
+#   13 + 15j,
 #   -2 + -5j,
-#   -17 + 11j,
+#   0 + 5j,
 #   -2 + 2j,
-#   -22 + -11j,
-#   -39 + -23j,
-#   0 + 1j,
+#   8 + -12j,
+#   13 + -2j,
+#   0 + 2j,
 #   0 + 12j,
 #   -9 + 7j,
 #   11 + -4j,
-#   -34 + -65531j,
+#   0 + -65531j,
 #   -11 + 3j,
-#   -127 + -327703j,
-#   -77 + -327724j,
+#   -15 + -327645j,
+#   -17 + -327638j,
 #   0 + 0j,
 #   -14 + 327638j,
-#   39 + 327623j,
+#   -13 + 327645j,
 #   -10 + -5j,
-#   17 + 65525j,
+#   0 + 65531j,
 #   12 + 4j,
-#   -8 + 21j,
-#   -21 + 39j,
-#   0 + -1j,
+#   -8 + -8j,
+#   1 + -14j,
+#   0 + -2j,
 #   16 + 2j,
 #   9 + 13j,
 #   1 + -2j,
-#   34 + -5j,
+#   0 + -5j,
 #   1 + 7j,
-#   157 + 13j,
-#   137 + 44j,
+#   15 + -15j,
+#   3 + -10j,
 # ]
-# Complete latency in Clock Cycles:           1475833
-# Accelerator runtime in Clock Cycles:            206
-# Complete latency in Milliseconds:       122.981164
-# Accelerator runtime in Milliseconds:    0.017166
-# Acceleration of first chunk started at (Milliseconds): 36.181386
-# Latency of first chunk is (MICROseconds): 17.165980
+# Complete latency in Clock Cycles:           1491826
+# Accelerator runtime in Clock Cycles:            170
+# Complete latency in Milliseconds:       124.313861
+# Accelerator runtime in Milliseconds:    0.014166
+# Acceleration of first chunk started at (Milliseconds): 41.069274
+# Latency of first chunk is (MICROseconds): 14.166100
 ##################################################
 # End of Testbench 						        
 ##################################################
 # ** Note: $finish    : ../src/testbench/tb_et4351.sv(182)
-#    Time: 118066720 ns  Iteration: 1  Instance: /testbench
-# End time: 19:03:03 on Mar 09,2026, Elapsed time: 0:00:04
+#    Time: 119346160 ns  Iteration: 1  Instance: /testbench
+# End time: 12:27:16 on Mar 12,2026, Elapsed time: 0:00:06
 # Errors: 0, Warnings: 6

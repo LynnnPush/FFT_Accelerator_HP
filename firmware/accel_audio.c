@@ -1,145 +1,211 @@
+/*##########################################################################
+###
+### FFT Accelerator Firmware (v3 — SW twiddle preload)
+###
+###     Changes from baseline:
+###       - Twiddle section in flash now contains N/2 global twiddle pairs
+###         (was: log2(N) per-stage primitives).
+###       - Firmware writes these twiddles to CSR registers iomem_accel[3..34]
+###         BEFORE asserting enable — completely outside the timed window.
+###       - SRAM stores ONLY input/output data (no twiddle offset).
+###
+###     Flash layout (produced by sound_util.py -> write_accel_io):
+###       flash[0]                            = N_total  (= N_chunk * chunks)
+###       flash[1]                            = number of chunks
+###       flash[2 .. 2 + entries_per_chunk-1] = global twiddle table
+###                 (re[0], im[0], re[1], im[1], ..., re[N/2-1], im[N/2-1])
+###       flash[2 + entries_per_chunk .. end]  = sample data
+###
+###     CSR register map:
+###       iomem_accel[0]  : Config & Status (reset/enable/done)
+###       iomem_accel[1]  : Number of entries (N)
+###       iomem_accel[2]  : Number of FFT stages (log2 N)
+###       iomem_accel[3]  : tw_re[0]
+###       iomem_accel[4]  : tw_im[0]
+###         ...
+###       iomem_accel[33] : tw_re[15]
+###       iomem_accel[34] : tw_im[15]
+###       MEM[0] starts at iomem_accel[35] = 0x0300_008C
+###
+###     TU Delft ET4351 - 2026 Project
+###
+##########################################################################*/
+
 #include "uart.h"
 #include "flash.h"
 #include "fft.h"
 
-// Define accelerator registers
-#define REG_CONFIG_AND_STATUS  (*(volatile uint32_t*)0x03000000)
-#define REG_NUMBER_OF_ENTRIES  (*(volatile uint32_t*)0x03000004)
-#define REG_NUMBER_OF_BITS     (*(volatile uint32_t*)0x03000008)
-#define ACCEL_SRAM_START_ADDR                        0x03000010
+/*--------------------------------------------------------------------------
+    Accelerator CSR / memory address map
+  --------------------------------------------------------------------------*/
+#define ACCEL_BASE_ADDR             0x03000000
 
-// Define accelerator control/status (CSR) bits
-#define MASK_CSR_RESET 1 << 0
-#define MASK_CSR_ENABLE 1 << 1
-#define MASK_CSR_DONE  1 << 2
+/* Configuration registers (word-addressed) */
+#define REG_CONFIG_AND_STATUS       (*(volatile uint32_t*)(ACCEL_BASE_ADDR + 0*4))   /* 0x03000000 */
+#define REG_NUMBER_OF_ENTRIES       (*(volatile uint32_t*)(ACCEL_BASE_ADDR + 1*4))   /* 0x03000004 */
+#define REG_NUMBER_OF_BITS          (*(volatile uint32_t*)(ACCEL_BASE_ADDR + 2*4))   /* 0x03000008 */
 
+/* Twiddle CSR registers start at word index 3 */
+#define ACCEL_TW_CSR_START_ADDR     (ACCEL_BASE_ADDR + 3*4)                          /* 0x0300000C */
 
+/* Number of config + twiddle CSR registers = 3 + 2*(N/2) = 3 + 32 = 35 */
+#define NUM_CSR_REGS                35
+
+/* SRAM data region starts right after all CSR registers */
+#define ACCEL_SRAM_START_ADDR       (ACCEL_BASE_ADDR + NUM_CSR_REGS * 4)             /* 0x0300008C */
+
+/* CSR control/status bits */
+#define MASK_CSR_RESET              (1 << 0)
+#define MASK_CSR_ENABLE             (1 << 1)
+#define MASK_CSR_DONE               (1 << 2)
+
+/*--------------------------------------------------------------------------
+    Helper: read one signed 32-bit integer from accelerator SRAM by index
+  --------------------------------------------------------------------------*/
 static int read_dec_entry_from_accelerator_sram(int index) {
-	// i * 4 because each entry (signed 32-bit integer) is 4 bytes
-	uint32_t sram_address = ACCEL_SRAM_START_ADDR + index*4;
-
-	return (*(volatile int*)(sram_address));
+    uint32_t sram_address = ACCEL_SRAM_START_ADDR + index * 4;
+    return (*(volatile int*)(sram_address));
 }
 
-static void accelerated_fft(int n, int chunks, int bits) { 
-	// Initialize accelerator
-	REG_CONFIG_AND_STATUS = 0;
-	REG_NUMBER_OF_ENTRIES = 0;
+/*--------------------------------------------------------------------------
+    Accelerated FFT routine
+  --------------------------------------------------------------------------*/
+static void accelerated_fft(int n, int chunks, int bits) {
+    /* ================================================================
+     *  Phase 0:  Initialise accelerator
+     * ================================================================ */
+    REG_CONFIG_AND_STATUS  = 0;
+    REG_NUMBER_OF_ENTRIES  = 0;
 
-	// Reset accelerator (this additional reset is necessary when processing multiple chunks)
-	REG_CONFIG_AND_STATUS = REG_CONFIG_AND_STATUS | MASK_CSR_RESET;  // Set reset bit
-	REG_CONFIG_AND_STATUS &= ~MASK_CSR_RESET; // Clear reset bit
+    /* Pulse reset */
+    REG_CONFIG_AND_STATUS = MASK_CSR_RESET;
+    REG_CONFIG_AND_STATUS = 0;
 
-	int entries_per_chunk = n / chunks;
+    int entries_per_chunk = n / chunks;
+    int half_n = entries_per_chunk / 2;     /* = N/2  (16 for N=32)         */
+    int num_tw_values = 2 * half_n;         /* = N    (32 for N=32)         */
 
-	// Set number of entries
-	REG_NUMBER_OF_ENTRIES = entries_per_chunk;
+    /* Set configuration */
+    REG_NUMBER_OF_ENTRIES = entries_per_chunk;
+    REG_NUMBER_OF_BITS    = bits;
 
-    // Set number of bits
-    REG_NUMBER_OF_BITS = bits;
+    /* ================================================================
+     *  Phase 1:  Load twiddle factors from flash -> CSR registers
+     *            (OUTSIDE the timed accelerator window)
+     *
+     *  Flash layout: [N_total, chunks, tw_re0, tw_im0, tw_re1, ...]
+     *  Number of twiddle values = entries_per_chunk = 2*half_n
+     * ================================================================ */
+    int flash_offset = 2;   /* skip N_total and chunks at flash[0], flash[1] */
 
-	// Due to the number of values stored at index 0 and the number
-	// of chunks stored at index 1, the twiddles start at index 2
-    int flash_offset = 2; 
+    for (int i = 0; i < num_tw_values; i++) {
+        uint32_t csr_address = ACCEL_TW_CSR_START_ADDR + i * 4;
+        (*(volatile int*)(csr_address)) = read_dec_entry_from_flash(flash_offset + i);
+    }
+    flash_offset += num_tw_values;
 
-	// Write twiddles to SRAM of accelerator
-	for (int i = 0; i < 2 * bits; i++) {
-		// i * 4 because each entry (signed 32-bit integer) is 4 bytes
-		uint32_t sram_address = ACCEL_SRAM_START_ADDR + i*4;
+    /* ================================================================
+     *  Phase 2:  Process each chunk
+     * ================================================================ */
+    for (int chunk = 0; chunk < chunks; chunk++) {
 
-		(*(volatile int*)(sram_address)) = read_dec_entry_from_flash(flash_offset + i);
-	}
+        /* --- Reset accelerator for this chunk --- */
+        REG_CONFIG_AND_STATUS = MASK_CSR_RESET;
+        REG_CONFIG_AND_STATUS = 0;
 
-    // We read starting from i + 2 + 2 * bits, because those 2 * bits entries were the twiddles
-    flash_offset += 2 * bits;
+        /* --- Write input data to SRAM (bit-reversed order) ---
+         * SRAM data layout: re[0], im[0], re[1], im[1], ...
+         * Data starts at SRAM index 0 (no twiddle offset in SRAM).
+         */
+        for (int i = 0; i < entries_per_chunk; i++) {
+            uint32_t sram_address = ACCEL_SRAM_START_ADDR + (2 * i) * 4;
 
-	for (int chunk = 0; chunk < chunks; chunk++) {
-		// Reset accelerator
-		REG_CONFIG_AND_STATUS = REG_CONFIG_AND_STATUS | MASK_CSR_RESET;  // Set reset bit
-		REG_CONFIG_AND_STATUS &= ~MASK_CSR_RESET; // Clear reset bit
+            int bit_reverse_i = bit_reverse(i, bits);
+            (*(volatile int*)(sram_address)) = read_dec_entry_from_flash(flash_offset + bit_reverse_i);
 
-		// Write input array to SRAM of accelerator
-		for (int i = 0; i < entries_per_chunk; i++) {
-			// The inputs are composed of a real part only: Write the real part.
-			// i * 4 because each entry (signed 32-bit integer) is 4 bytes
-			uint32_t sram_address = ACCEL_SRAM_START_ADDR + (2 * bits + 2 * i) * 4;
+            /* Imaginary part = 0  (real-valued input) */
+            sram_address += 4;
+            (*(volatile int*)(sram_address)) = 0;
+        }
 
-			int bit_reverse_i = bit_reverse(i, bits);
-			(*(volatile int*)(sram_address)) = read_dec_entry_from_flash(flash_offset + bit_reverse_i);
-			
-			// As the algorithm is in-place, we set the imaginary part to 0.
-			sram_address += 4;
-			(*(volatile int*)(sram_address)) = 0;
-		}
+        /* --- Enable accelerator (starts timed window) --- */
+        REG_CONFIG_AND_STATUS |= MASK_CSR_ENABLE;
 
-		// Start accelerator
-		REG_CONFIG_AND_STATUS |= MASK_CSR_ENABLE;
+        /* --- Wait for completion --- */
+        while (!(REG_CONFIG_AND_STATUS & MASK_CSR_DONE)) { }
 
-		// Wait for accelerator to finish
-		while (!(REG_CONFIG_AND_STATUS & MASK_CSR_DONE));
+        /* --- Disable accelerator --- */
+        REG_CONFIG_AND_STATUS &= ~MASK_CSR_ENABLE;
 
-		// Disable accelerator
-		REG_CONFIG_AND_STATUS &= ~MASK_CSR_ENABLE;
+        /* Advance flash pointer to next chunk's samples */
+        flash_offset += entries_per_chunk;
 
-		flash_offset += entries_per_chunk;
+        /* --- Read results from SRAM and print --- */
+        for (int i = 0; i < entries_per_chunk; i++) {
+            int real = read_dec_entry_from_accelerator_sram(2 * i);
+            int imag = read_dec_entry_from_accelerator_sram(2 * i + 1);
 
-		// In the accelerator SRAM, the the #values to FFT and #chunks are not stored
-		int sram_offset = 2 * bits;
-
-		for (int i = 0; i < entries_per_chunk; i++) {
-			int real = read_dec_entry_from_accelerator_sram(sram_offset + 2 * i);
-			// int imag = 0;
-			int imag = read_dec_entry_from_accelerator_sram(sram_offset + 2 * i + 1);
-
-			print_str("  ");
-			print_dec(real);
-			print_str(" + ");
-			print_dec(imag);
-			print_str("j,\n");
-		}
-	}
+            print_str("  ");
+            print_dec(real);
+            print_str(" + ");
+            print_dec(imag);
+            print_str("j,\n");
+        }
+    }
 }
 
-static void init_picosoc() {
-	#define SRAM_ADDR_HEAD 0x00000000
-	#define SRAM_ADDR_END  0x000003FF
+/*--------------------------------------------------------------------------
+    PicoSoC initialisation (SRAM clear + UART baud rate)
+  --------------------------------------------------------------------------*/
+#define SRAM_ADDR_HEAD 0x00000000
+#define SRAM_ADDR_END  0x000003FF
 
-    // Initialize SRAM (Otherwise the post-synthesis/layout simulation will fail, finished within 17192 cycles)
+static void init_picosoc(void) {
+    /* Zero SRAM — required for post-synthesis/layout simulation */
     volatile uint32_t* sram_addr = 0x00000000;
     for (sram_addr = 0; sram_addr <= (volatile uint32_t*) SRAM_ADDR_END; sram_addr += 4) {
         *sram_addr = 0;
     }
 
-    // Initialize UART
+    /* Set UART baud rate */
     init_uart();
 }
 
-void main(void)
-{
-	// Initialize PicoSoC
-	init_picosoc();
+/*--------------------------------------------------------------------------
+    Main entry point
+  --------------------------------------------------------------------------*/
+void main(void) {
+    /* Initialise PicoSoC (SRAM + UART) */
+    init_picosoc();
 
-    int n = read_dec_entry_from_flash(0);
-	int chunks = read_dec_entry_from_flash(1);
-    int bits = flog2(n / chunks);
+    /* Read N_total and number of chunks from flash */
+    int n      = read_dec_entry_from_flash(0);
+    int chunks = read_dec_entry_from_flash(1);
 
-	print_str("\nFrequency domain output: \n[\n");
+    /* Compute bits = log2(N_chunk) */
+    int entries_per_chunk = n / chunks;
+    int bits = 0;
+    {
+        int tmp = entries_per_chunk;
+        while (tmp > 1) { tmp >>= 1; bits++; }
+    }
 
-	// We do not need to pass the array and its size to the accelerated_fft function
-	// as this information is read from the flash memory by the function itself
-	accelerated_fft(n, chunks, bits);
+    print_str("\nFrequency domain output: \n[\n");
 
-	print_str("]\n");
+    /* Run accelerated FFT */
+    accelerated_fft(n, chunks, bits);
 
-    // End of Program
+    print_str("]\n");
+
+    /* Signal end of program to testbench */
     print_char(-1);
 }
 
-/*
- * Define the entry point of the program.
- */
+/*--------------------------------------------------------------------------
+    Entry point — placed in .text.start so the linkerscript puts it at
+    the reset vector (0x00100000).
+  --------------------------------------------------------------------------*/
 __attribute__((section(".text.start")))
-void _start(void)
-{
-	main();
+void _start(void) {
+    main();
 }
