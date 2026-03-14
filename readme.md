@@ -1,7 +1,7 @@
 # ET4351 Digital VLSI Design — FFT Accelerator
 **TU Delft — ET4351 Digital VLSI Design, 2026 Project**
 
-This is the **default branch** of the repository. It implements a heavily optimised FFT accelerator that combines four architectural improvements over the baseline: a register-file datapath, SW-driven twiddle preload via CSR registers, 2× parallel butterfly units, and a **4-stage micro-pipelined compute engine** that achieves 1-throughput (one butterfly pair per clock cycle).
+This design implements a heavily optimised FFT accelerator that combines four architectural improvements over the baseline: a register-file datapath, SW-driven twiddle preload via CSR registers, 2× parallel butterfly units, and a **4-stage micro-pipelined compute engine** that achieves 1-throughput (one butterfly pair per clock cycle).
 
 The micro-pipeline also shortens the critical path significantly, enabling up to **5× higher clock frequency** compared to the baseline. Combined with the cycle count reduction, this yields an overall **~20× speedup** in single-chunk FFT latency.
 
