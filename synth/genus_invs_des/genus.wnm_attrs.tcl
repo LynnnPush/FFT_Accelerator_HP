@@ -2921,10 +2921,13 @@ set_db pin:et4351/accel/fft/stg2_bf1_u_re_reg_29_/Q .original_name {accel/fft/st
 set_db pin:et4351/accel/fft/stg2_bf1_u_re_reg_30_/Q .original_name {accel/fft/stg2_bf1_u_re[30]/q}
 set_db pin:et4351/accel/fft/stg2_bf1_u_re_reg_31_/Q .original_name {accel/fft/stg2_bf1_u_re[31]/q}
 set_db pin:et4351/accel/fft/stg3_bf0_idx_u_reg_1_/Q .original_name {accel/fft/stg3_bf0_idx_u[1]/q}
+set_db pin:et4351/accel/fft/stg3_bf0_idx_u_reg_1_/QN .original_name {accel/fft/stg3_bf0_idx_u[1]/q}
 set_db pin:et4351/accel/fft/stg3_bf0_idx_u_reg_2_/Q .original_name {accel/fft/stg3_bf0_idx_u[2]/q}
 set_db pin:et4351/accel/fft/stg3_bf0_idx_u_reg_2_/QN .original_name {accel/fft/stg3_bf0_idx_u[2]/q}
 set_db pin:et4351/accel/fft/stg3_bf0_idx_u_reg_3_/Q .original_name {accel/fft/stg3_bf0_idx_u[3]/q}
+set_db pin:et4351/accel/fft/stg3_bf0_idx_u_reg_3_/QN .original_name {accel/fft/stg3_bf0_idx_u[3]/q}
 set_db pin:et4351/accel/fft/stg3_bf0_idx_u_reg_4_/Q .original_name {accel/fft/stg3_bf0_idx_u[4]/q}
+set_db pin:et4351/accel/fft/stg3_bf0_idx_u_reg_4_/QN .original_name {accel/fft/stg3_bf0_idx_u[4]/q}
 set_db pin:et4351/accel/fft/stg3_bf0_idx_v_reg_0_/Q .original_name {accel/fft/stg3_bf0_idx_v[0]/q}
 set_db pin:et4351/accel/fft/stg3_bf0_idx_v_reg_1_/Q .original_name {accel/fft/stg3_bf0_idx_v[1]/q}
 set_db pin:et4351/accel/fft/stg3_bf0_idx_v_reg_2_/Q .original_name {accel/fft/stg3_bf0_idx_v[2]/q}

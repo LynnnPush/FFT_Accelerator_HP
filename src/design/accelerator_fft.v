@@ -151,8 +151,8 @@ module accelerator_fft #(
     ========================================================================================*/
   // 'pump' drives new data into the pipeline every cycle until the stage limit is reached
   wire pump          = (state_reg == S_COMPUTE) && (bf_cnt < half_n);
-  // 'pipe_empty' signals that all data has drained out of the pipeline
-  wire pipe_empty    = (pipe_vld == 3'b000) && !pump;
+  // 'pipe_last_drain' signals that the pipeline will drain out in next cycle, and ready for new stage pump if needed.
+  wire pipe_last_drain = (pipe_vld == 3'b100) && !pump;
   wire stage_is_last = (stage == fft_stages);
 
   /*========================================================================================
@@ -164,7 +164,7 @@ module accelerator_fft #(
       S_INIT:       if (enable_accel)                               next_state = S_LOAD_DATA;
       S_LOAD_DATA:  if (io_cnt == data_total - 1)                   next_state = S_COMPUTE;
       // Wait for pipeline to drain completely before moving to store
-      S_COMPUTE:    if (pipe_empty && stage_is_last)                next_state = S_STORE_DATA;
+      S_COMPUTE:    if (pipe_last_drain && stage_is_last)           next_state = S_STORE_DATA;
       S_STORE_DATA: if (io_cnt == data_total - 1)                   next_state = S_FINISH;
       S_FINISH:     if (!enable_accel)                              next_state = S_INIT;
       default:                                                      next_state = S_INIT;
@@ -307,7 +307,7 @@ module accelerator_fft #(
 
           // 5. Stage Progress Control
           // Once the pipeline is completely empty, it is safe to bump to the next FFT stage.
-          if (pipe_empty && !stage_is_last) begin
+          if (pipe_last_drain && !stage_is_last) begin
             stage  <= stage + 1;
             bf_cnt <= '0;
           end

@@ -2929,10 +2929,13 @@ add mapped point accel/fft/stg2_bf1_u_re[29]/q accel/fft/stg2_bf1_u_re_reg_29_/Q
 add mapped point accel/fft/stg2_bf1_u_re[30]/q accel/fft/stg2_bf1_u_re_reg_30_/Q  -type DFF DFF
 add mapped point accel/fft/stg2_bf1_u_re[31]/q accel/fft/stg2_bf1_u_re_reg_31_/Q  -type DFF DFF
 add mapped point accel/fft/stg3_bf0_idx_u[1]/q accel/fft/stg3_bf0_idx_u_reg_1_/Q  -type DFF DFF
+add mapped point accel/fft/stg3_bf0_idx_u[1]/q accel/fft/stg3_bf0_idx_u_reg_1_/QN  -type DFF DFF
 add mapped point accel/fft/stg3_bf0_idx_u[2]/q accel/fft/stg3_bf0_idx_u_reg_2_/Q  -type DFF DFF
 add mapped point accel/fft/stg3_bf0_idx_u[2]/q accel/fft/stg3_bf0_idx_u_reg_2_/QN  -type DFF DFF
 add mapped point accel/fft/stg3_bf0_idx_u[3]/q accel/fft/stg3_bf0_idx_u_reg_3_/Q  -type DFF DFF
+add mapped point accel/fft/stg3_bf0_idx_u[3]/q accel/fft/stg3_bf0_idx_u_reg_3_/QN  -type DFF DFF
 add mapped point accel/fft/stg3_bf0_idx_u[4]/q accel/fft/stg3_bf0_idx_u_reg_4_/Q  -type DFF DFF
+add mapped point accel/fft/stg3_bf0_idx_u[4]/q accel/fft/stg3_bf0_idx_u_reg_4_/QN  -type DFF DFF
 add mapped point accel/fft/stg3_bf0_idx_v[0]/q accel/fft/stg3_bf0_idx_v_reg_0_/Q  -type DFF DFF
 add mapped point accel/fft/stg3_bf0_idx_v[1]/q accel/fft/stg3_bf0_idx_v_reg_1_/Q  -type DFF DFF
 add mapped point accel/fft/stg3_bf0_idx_v[2]/q accel/fft/stg3_bf0_idx_v_reg_2_/Q  -type DFF DFF
