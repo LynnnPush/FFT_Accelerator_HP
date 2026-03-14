@@ -1,0 +1,61 @@
+# ==========================================
+# Original User Entries
+# ==========================================
+*.gds
+*.qpg
+innovus.log*
+*.tif.gz
+
+# ==========================================
+# Simulation (sim_behav, sim_struct, sim_phys)
+# ==========================================
+# Waveforms
+*.vcd
+*.fsdb
+*.shm/
+*.vpd
+*.wlf
+workLib/
+
+# Compiled databases, libraries, and binaries
+INCA_libs/
+xcelium.d/
+csrc/
+simv
+simv.daidir/
+work/
+*.history
+
+# ==========================================
+# Synthesis & Place and Route (synth, pnr)
+# ==========================================
+# PnR databases and intermediate states
+*.enc
+*.enc.dat/
+genus.cmd*
+
+# Parasitics and Timing Formats (Huge files)
+*.spef
+*.sdf
+
+# Synthesis/Logic databases
+*.db
+*.svf
+alib-52/
+
+# Tool commands and journals
+*.cmd
+innovus.cmd*
+*.jou
+
+# ==========================================
+# General OS & Temp Files
+# ==========================================
+*~
+core.*
+.nfs*
+# Extra EDA tool logs and environments
+*.log*
+.cce.env*
+extLogDir/
+client_log/
