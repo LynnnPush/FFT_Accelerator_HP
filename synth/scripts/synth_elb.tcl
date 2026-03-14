@@ -63,6 +63,9 @@ change_names -restricted "\[ \]" -replace_str "_"
 # Number of routing layers
 set_attribute number_of_routing_layers 8 /designs/*
 
+# Enable register retiming to pipeline the multipliers
+set_attribute retime true /designs/*
+
 
 ####################################################################
 ## Generic synthesis

@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 21.10-p002_1 on Thu Mar 12 12:47:43 CET 2026
+#  Created by Genus(TM) Synthesis Solution 21.10-p002_1 on Fri Mar 13 22:55:19 CET 2026
 
 # ####################################################################
 
@@ -12,7 +12,7 @@ set_units -time 1000ps
 # Set the current design
 current_design et4351
 
-create_clock -name "clk" -period 83.33 -waveform {0.0 41.665} [get_ports clk]
+create_clock -name "clk" -period 16.67 -waveform {0.0 8.335} [get_ports clk]
 create_generated_clock -name "flash_clk" -divide_by 2     -source [get_ports clk]   [get_ports flash_clk] 
 set_load -pin_load 0.05 [get_ports ser_tx]
 set_load -pin_load 0.05 [get_ports flash_csb]
@@ -26,22 +26,22 @@ set_false_path -from [list \
   [get_ports resetn]  \
   [get_ports ser_rx] ]
 set_clock_gating_check -setup 0.0 
-set_input_delay -clock [get_clocks flash_clk] -add_delay -max 25.8325 [get_ports flash_io0]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -max 25.8325 [get_ports flash_io0]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -max 25.8325 [get_ports flash_io1]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -max 25.8325 [get_ports flash_io1]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -max 25.8325 [get_ports flash_io2]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -max 25.8325 [get_ports flash_io2]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -max 25.8325 [get_ports flash_io3]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -max 25.8325 [get_ports flash_io3]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -min 20.8325 [get_ports flash_io0]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -min 20.8325 [get_ports flash_io0]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -min 20.8325 [get_ports flash_io1]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -min 20.8325 [get_ports flash_io1]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -min 20.8325 [get_ports flash_io2]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -min 20.8325 [get_ports flash_io2]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -min 20.8325 [get_ports flash_io3]
-set_input_delay -clock [get_clocks flash_clk] -add_delay -min 20.8325 [get_ports flash_io3]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -max 9.1675 [get_ports flash_io0]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -max 9.1675 [get_ports flash_io0]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -max 9.1675 [get_ports flash_io1]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -max 9.1675 [get_ports flash_io1]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -max 9.1675 [get_ports flash_io2]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -max 9.1675 [get_ports flash_io2]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -max 9.1675 [get_ports flash_io3]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -max 9.1675 [get_ports flash_io3]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -min 4.1675 [get_ports flash_io0]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -min 4.1675 [get_ports flash_io0]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -min 4.1675 [get_ports flash_io1]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -min 4.1675 [get_ports flash_io1]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -min 4.1675 [get_ports flash_io2]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -min 4.1675 [get_ports flash_io2]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -min 4.1675 [get_ports flash_io3]
+set_input_delay -clock [get_clocks flash_clk] -add_delay -min 4.1675 [get_ports flash_io3]
 set_output_delay -clock [get_clocks flash_clk] -add_delay -max 5.0 [get_ports flash_io0]
 set_output_delay -clock [get_clocks flash_clk] -add_delay -max 5.0 [get_ports flash_io0]
 set_output_delay -clock [get_clocks flash_clk] -add_delay -max 5.0 [get_ports flash_io1]
