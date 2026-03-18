@@ -1,27 +1,33 @@
 /*##########################################################################
 ###
-### SW-twiddle-preload parallel-butterfly FFT accelerator (v6 — 1-Throughput)
+### SW-twiddle-preload parallel-butterfly FFT accelerator
+###     (v7 — 1-Throughput pipeline + wide memory interface)
 ###
-###     Builds on v5 with a fully overlapped, 1-throughput pipeline:
+###     Builds on v6 with a WIDE PAIRED SRAM INTERFACE (Option B):
 ###
-###       Phase 0 (FETCH): Comb. address gen. Latch operands from SRAM/CSR.
+###       The FFT core reads/writes one complex pair (re + im) per cycle
+###       during LOAD and STORE phases, halving the memory transfer time.
+###
+###     Compute pipeline is unchanged from v6:
+###       Phase 0 (FETCH): Comb. address gen. Latch operands from regfile/CSR.
 ###       Phase 1 (MUL1):  Raw multiplication (rr, ii, ri, ir).
 ###       Phase 2 (MUL2):  Add/sub products and >>> SCALE. Latch t values.
 ###       Phase 3 (ADD):   Final butterfly (e = u+t, o = u-t). Write back.
 ###
-###     FSM now fires a new butterfly pair EVERY clock cycle.
-###     Total cycles per stage for N=32: 8 fetch cycles + 3 drain cycles = 11.
-###     Total compute cycles: 11 * 5 stages = 55 cycles (down from 80!).
+###     Cycle count for N=32:
+###       INIT(1) + LOAD_DATA(32) + COMPUTE(55) + STORE_DATA(32) + FINISH(1) = 121
+###
+###     Down from 185 cycles (v6).  LOAD+STORE drops from 128 to 64 cycles.
 ###
 ##########################################################################*/
 
 module accelerator_fft #(
-    parameter integer LOG_MAX_N   = 32,                
-    parameter integer MEM_WIDTH   = 32,                
-    parameter integer ADDR_WIDTH  = 32,                
-    parameter integer NUM_TW      = 16,                
-    parameter integer TW_WIDTH    = 16,                
-    localparam LOG_MAX_FFT_STAGES = $clog2(LOG_MAX_N)  
+    parameter integer LOG_MAX_N   = 32,
+    parameter integer MEM_WIDTH   = 32,
+    parameter integer ADDR_WIDTH  = 32,
+    parameter integer NUM_TW      = 16,
+    parameter integer TW_WIDTH    = 16,
+    localparam LOG_MAX_FFT_STAGES = $clog2(LOG_MAX_N)
 ) (
     input wire clk,
     input wire resetn,
@@ -31,32 +37,36 @@ module accelerator_fft #(
     input wire enable_accel,
 
     // Configuration
-    input wire [LOG_MAX_N-1:0]          number_data,   
-    input wire [LOG_MAX_FFT_STAGES-1:0] fft_stages,    
+    input wire [LOG_MAX_N-1:0]          number_data,
+    input wire [LOG_MAX_FFT_STAGES-1:0] fft_stages,
 
-    // SRAM interface
-    output reg  [ 3:0] accel_mem_wstrb,
-    input  wire [31:0] accel_mem_rdata,
-    output reg  [31:0] accel_mem_wdata,
-    output reg  [31:0] accel_mem_addr,
+    // Wide paired SRAM interface  (reads/writes one complex pair per cycle)
+    output reg  [ 3:0] accel_mem_wstrb_lo,          // write strobe, even word (re)
+    output reg  [ 3:0] accel_mem_wstrb_hi,          // write strobe, odd  word (im)
+    input  wire [31:0] accel_mem_rdata_lo,           // read data,  even word (re)
+    input  wire [31:0] accel_mem_rdata_hi,           // read data,  odd  word (im)
+    output reg  [31:0] accel_mem_wdata_lo,           // write data, even word (re)
+    output reg  [31:0] accel_mem_wdata_hi,           // write data, odd  word (im)
+    output reg  [31:0] accel_mem_pair_addr,          // pair index (not byte address)
 
-    // Pre-loaded twiddle factors from CSR 
+    // Pre-loaded twiddle factors from CSR
     input wire [MEM_WIDTH * NUM_TW - 1 : 0] tw_re_packed,
     input wire [MEM_WIDTH * NUM_TW - 1 : 0] tw_im_packed,
 
     // Status
     output reg fft_finished
 );
+
   /*========================================================================================
         DERIVED PARAMETERS
     ========================================================================================*/
   localparam MAX_FFT_N      = 32;
-  localparam MAX_FFT_STAGES = $clog2(MAX_FFT_N);           
-  localparam HALF_N         = MAX_FFT_N / 2;
-  localparam IDX_W          = $clog2(MAX_FFT_N);
-  localparam IO_CNT_W       = $clog2(2 * MAX_FFT_N) + 1;
+  localparam MAX_FFT_STAGES = $clog2(MAX_FFT_N);           // = 5
+  localparam HALF_N         = MAX_FFT_N / 2;               // = 16
+  localparam IDX_W          = $clog2(MAX_FFT_N);            // = 5
+  localparam IO_CNT_W       = $clog2(MAX_FFT_N) + 1;       // = 6 (counts 0..N-1 = 0..31)
   localparam SCALE          = 12;
-  localparam P              = 2;
+  localparam P              = 2;                            // parallel butterfly units
 
   /*========================================================================================
         UNPACK TWIDDLE FLAT BUS
@@ -84,7 +94,7 @@ module accelerator_fft #(
   reg [2:0] next_state;
 
   /*========================================================================================
-        DATA REGISTER FILE  (32 complex values = 64 x 32-bit)
+        DATA REGISTER FILE  (32 complex values = 64 × 32-bit)
     ========================================================================================*/
   reg signed [MEM_WIDTH-1:0] data_re [0:MAX_FFT_N-1];
   reg signed [MEM_WIDTH-1:0] data_im [0:MAX_FFT_N-1];
@@ -95,20 +105,22 @@ module accelerator_fft #(
   reg [IO_CNT_W-1:0]           io_cnt;
   reg [LOG_MAX_FFT_STAGES-1:0] stage;
   reg [IDX_W-1:0]              bf_cnt;
-  
+
   // Pipeline Tracking Shift Register (1 bit per pipeline stage active)
-  reg [2:0] pipe_vld; 
+  reg [2:0] pipe_vld;
 
   /*========================================================================================
         ADDRESS / COUNT HELPERS
     ========================================================================================*/
-  wire [IO_CNT_W-1:0] data_total = number_data[IDX_W:0] << 1;          
-  wire [IDX_W-1:0] half_n        = number_data[IDX_W:1];                    
-  wire [IDX_W-1:0] half_cur      = 1 << (stage - 1);
+  // pair_total = N  (number of complex pairs to transfer)
+  wire [IO_CNT_W-1:0] pair_total = number_data[IDX_W:0];   // = 32 for N=32
+
+  wire [IDX_W-1:0] half_n    = number_data[IDX_W:1];       // = N/2 = 16
+  wire [IDX_W-1:0] half_cur  = 1 << (stage - 1);
   wire [LOG_MAX_FFT_STAGES-1:0] tw_stride = fft_stages - stage;
 
   /*========================================================================================
-        PARALLEL BUTTERFLY ADDRESSING  (combinational)
+        PARALLEL BUTTERFLY ADDRESSING  (combinational, unchanged from v6)
     ========================================================================================*/
   // ----- Butterfly 0 -----
   wire [IDX_W-1:0] bf0_j       = bf_cnt;
@@ -127,9 +139,9 @@ module accelerator_fft #(
   wire [IDX_W-1:0] bf1_tw_idx  = bf1_k_loc << tw_stride;
 
   /*========================================================================================
-        PIPELINE REGISTERS
+        PIPELINE REGISTERS  (unchanged from v6)
     ========================================================================================*/
-  // ---- STAGE 1 (Latched Operands from SRAM/CSR) ----
+  // ---- STAGE 1 (Latched Operands from regfile/CSR) ----
   reg signed [MEM_WIDTH-1:0] stg1_bf0_u_re, stg1_bf0_u_im, stg1_bf1_u_re, stg1_bf1_u_im;
   reg signed [MEM_WIDTH-1:0] stg1_bf0_v_re, stg1_bf0_v_im, stg1_bf1_v_re, stg1_bf1_v_im;
   reg signed [TW_WIDTH-1:0]  stg1_bf0_tw_re, stg1_bf0_tw_im, stg1_bf1_tw_re, stg1_bf1_tw_im;
@@ -147,11 +159,9 @@ module accelerator_fft #(
   reg [IDX_W-1:0]            stg3_bf0_idx_u, stg3_bf0_idx_v, stg3_bf1_idx_u, stg3_bf1_idx_v;
 
   /*========================================================================================
-        COMPUTE PHASE TERMINATION / PUMP LOGIC
+        COMPUTE PHASE TERMINATION / PUMP LOGIC  (unchanged from v6)
     ========================================================================================*/
-  // 'pump' drives new data into the pipeline every cycle until the stage limit is reached
   wire pump          = (state_reg == S_COMPUTE) && (bf_cnt < half_n);
-  // 'pipe_last_drain' signals that the pipeline will drain out in next cycle, and ready for new stage pump if needed.
   wire pipe_last_drain = (pipe_vld == 3'b100) && !pump;
   wire stage_is_last = (stage == fft_stages);
 
@@ -162,31 +172,39 @@ module accelerator_fft #(
     next_state = state_reg;
     case (state_reg)
       S_INIT:       if (enable_accel)                               next_state = S_LOAD_DATA;
-      S_LOAD_DATA:  if (io_cnt == data_total - 1)                   next_state = S_COMPUTE;
-      // Wait for pipeline to drain completely before moving to store
+      S_LOAD_DATA:  if (io_cnt == pair_total - 1)                   next_state = S_COMPUTE;
       S_COMPUTE:    if (pipe_last_drain && stage_is_last)           next_state = S_STORE_DATA;
-      S_STORE_DATA: if (io_cnt == data_total - 1)                   next_state = S_FINISH;
+      S_STORE_DATA: if (io_cnt == pair_total - 1)                   next_state = S_FINISH;
       S_FINISH:     if (!enable_accel)                              next_state = S_INIT;
       default:                                                      next_state = S_INIT;
     endcase
   end
 
   /*========================================================================================
-        OUTPUT LOGIC  (SRAM Read/Write)
+        OUTPUT LOGIC  (Wide SRAM Read/Write — combinational)
     ========================================================================================*/
   always @(*) begin
-    accel_mem_wstrb = 4'b0000;
-    accel_mem_wdata = 32'd0;
-    accel_mem_addr  = 32'd0;
+    accel_mem_wstrb_lo = 4'b0000;
+    accel_mem_wstrb_hi = 4'b0000;
+    accel_mem_wdata_lo = 32'd0;
+    accel_mem_wdata_hi = 32'd0;
+    accel_mem_pair_addr = 32'd0;
 
     case (state_reg)
-      S_LOAD_DATA: accel_mem_addr = {{(32-IO_CNT_W){1'b0}}, io_cnt};
-      S_STORE_DATA: begin
-        accel_mem_addr  = {{(32-IO_CNT_W){1'b0}}, io_cnt};
-        accel_mem_wstrb = 4'b1111;
-        if (io_cnt[0] == 1'b0) accel_mem_wdata = data_re[io_cnt[IO_CNT_W-1:1]];
-        else                   accel_mem_wdata = data_im[io_cnt[IO_CNT_W-1:1]];
+      // LOAD: present pair address, memory responds combinationally
+      S_LOAD_DATA: begin
+        accel_mem_pair_addr = {{(32-IO_CNT_W){1'b0}}, io_cnt};
       end
+
+      // STORE: drive pair address + both write data + strobes
+      S_STORE_DATA: begin
+        accel_mem_pair_addr = {{(32-IO_CNT_W){1'b0}}, io_cnt};
+        accel_mem_wstrb_lo  = 4'b1111;
+        accel_mem_wstrb_hi  = 4'b1111;
+        accel_mem_wdata_lo  = data_re[io_cnt[IDX_W-1:0]];      // even word → re
+        accel_mem_wdata_hi  = data_im[io_cnt[IDX_W-1:0]];      // odd  word → im
+      end
+
       default: ;
     endcase
   end
@@ -194,6 +212,8 @@ module accelerator_fft #(
   /*========================================================================================
         SEQUENTIAL DATAPATH
     ========================================================================================*/
+  integer i;
+
   always @(posedge clk) begin
     if (!resetn || reset_accel) begin
       state_reg    <= S_INIT;
@@ -202,7 +222,6 @@ module accelerator_fft #(
       bf_cnt       <= '0;
       pipe_vld     <= 3'b000;
       fft_finished <= 1'b0;
-      // Pipeline reset (optional, but good for sim)
       stg1_bf0_idx_u <= '0; stg1_bf1_idx_u <= '0;
       stg2_bf0_idx_u <= '0; stg2_bf1_idx_u <= '0;
       stg3_bf0_idx_u <= '0; stg3_bf1_idx_u <= '0;
@@ -210,6 +229,10 @@ module accelerator_fft #(
       state_reg <= next_state;
 
       case (state_reg)
+
+        // ==============================================================
+        //  INIT
+        // ==============================================================
         S_INIT: begin
           stage        <= 'b1;
           bf_cnt       <= '0;
@@ -218,20 +241,26 @@ module accelerator_fft #(
           fft_finished <= 1'b0;
         end
 
+        // ==============================================================
+        //  LOAD_DATA — capture one complex pair per cycle via wide port
+        //    Pair k arrives as {rdata_hi=im[k], rdata_lo=re[k]}
+        // ==============================================================
         S_LOAD_DATA: begin
-          if (io_cnt[0] == 1'b0) data_re[io_cnt[IO_CNT_W-1:1]] <= accel_mem_rdata;
-          else                   data_im[io_cnt[IO_CNT_W-1:1]] <= accel_mem_rdata;
-            
-          if (io_cnt == data_total - 1) io_cnt <= '0;
+          data_re[io_cnt[IDX_W-1:0]] <= accel_mem_rdata_lo;    // even → re
+          data_im[io_cnt[IDX_W-1:0]] <= accel_mem_rdata_hi;    // odd  → im
+
+          if (io_cnt == pair_total - 1) io_cnt <= '0;
           else                          io_cnt <= io_cnt + 1;
         end
 
+        // ==============================================================
+        //  COMPUTE — 4-stage pipelined butterfly (unchanged from v6)
+        // ==============================================================
         S_COMPUTE: begin
           // 0. Advance pipeline valid shift register
           pipe_vld <= {pipe_vld[1:0], pump};
 
-          // 1. FETCH -> LATCH (Stage 1)
-          // Comb logic generates addresses. If 'pump' is true, latch operands and advance counter.
+          // 1. FETCH → LATCH (Stage 1)
           if (pump) begin
             bf_cnt <= bf_cnt + P;
 
@@ -254,7 +283,7 @@ module accelerator_fft #(
             stg1_bf1_idx_v <= bf1_idx_v;
           end
 
-          // 2. MUL1 -> LATCH (Stage 2)
+          // 2. MUL1 → LATCH (Stage 2)
           if (pipe_vld[0]) begin
             stg2_bf0_rr    <= stg1_bf0_v_re * stg1_bf0_tw_re;
             stg2_bf0_ii    <= stg1_bf0_v_im * stg1_bf0_tw_im;
@@ -275,7 +304,7 @@ module accelerator_fft #(
             stg2_bf1_idx_v <= stg1_bf1_idx_v;
           end
 
-          // 3. MUL2 / SCALE -> LATCH (Stage 3)
+          // 3. MUL2 / SCALE → LATCH (Stage 3)
           if (pipe_vld[1]) begin
             stg3_bf0_t_re  <= (stg2_bf0_rr - stg2_bf0_ii) >>> SCALE;
             stg3_bf0_t_im  <= (stg2_bf0_ri + stg2_bf0_ir) >>> SCALE;
@@ -292,7 +321,7 @@ module accelerator_fft #(
             stg3_bf1_idx_v <= stg2_bf1_idx_v;
           end
 
-          // 4. ADD / WRITEBACK -> SRAM
+          // 4. ADD / WRITEBACK → register file
           if (pipe_vld[2]) begin
             data_re[stg3_bf0_idx_u] <= stg3_bf0_u_re + stg3_bf0_t_re;
             data_im[stg3_bf0_idx_u] <= stg3_bf0_u_im + stg3_bf0_t_im;
@@ -306,18 +335,24 @@ module accelerator_fft #(
           end
 
           // 5. Stage Progress Control
-          // Once the pipeline is completely empty, it is safe to bump to the next FFT stage.
           if (pipe_last_drain && !stage_is_last) begin
             stage  <= stage + 1;
             bf_cnt <= '0;
           end
         end
 
+        // ==============================================================
+        //  STORE_DATA — one complex pair per cycle via wide port
+        //    Write strobes and data driven by combinational output block
+        // ==============================================================
         S_STORE_DATA: begin
-          if (io_cnt == data_total - 1) io_cnt <= '0;
+          if (io_cnt == pair_total - 1) io_cnt <= '0;
           else                          io_cnt <= io_cnt + 1;
         end
 
+        // ==============================================================
+        //  FINISH
+        // ==============================================================
         S_FINISH: begin
           fft_finished <= 1'b1;
         end

@@ -1,11 +1,9 @@
-The following 14 nets were included in the VCD files
+The following 12 nets were included in the VCD files
 but were not found in the design:
 flash_io0_di
 flash_io1_di
 flash_io2_di
 flash_io3_di
-accel/iomem_addr[1]
-accel/iomem_addr[0]
 soc/memory/sram_0/OEB
 soc/memory/sram_0/CSB
 soc/memory/sram_1/OEB

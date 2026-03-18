@@ -44,7 +44,6 @@ genus.cmd*
 alib-52/
 
 # Tool commands and journals
-*.cmd
 innovus.cmd*
 *.jou
 

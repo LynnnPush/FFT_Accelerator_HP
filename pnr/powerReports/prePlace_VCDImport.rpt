@@ -2,7 +2,7 @@
 *	Innovus 21.11-s130_1 (64bit) 08/19/2021 16:59 (Linux 3.10.0-693.el7.x86_64)
 *	
 *
-* 	Date & Time:	2026-Mar-09 19:46:28 (2026-Mar-09 18:46:28 GMT)
+* 	Date & Time:	2026-Mar-18 20:26:23 (2026-Mar-18 19:26:23 GMT)
 *
 *----------------------------------------------------------------------------------------
 *
@@ -23,7 +23,7 @@
 *	        ../sim_struct/vcd/et4351.struct.vcd
 *                    Vcd Window used(Start Time, Stop Time):   
 *                     Vcd Scale Factor: 1 
-* *                    Design annotation coverage: 0/66991 = 0% 
+* *                    Design annotation coverage: 0/61109 = 0% 
 *
 *       Hierarchical Global Activity: N.A.
 *
@@ -48,39 +48,39 @@
 
 Total Power 
 -----------------------------------------------------------------------------------------
-Total Internal Power:        0.51596567 	   90.9780%
-Total Switching Power:       0.02557090 	    4.5088%
-Total Leakage Power:         0.02559609 	    4.5132%
-Total Power:                 0.56713266 
+Total Internal Power:        0.42849523 	   93.9203%
+Total Switching Power:       0.00271097 	    0.5942%
+Total Leakage Power:         0.02502679 	    5.4855%
+Total Power:                 0.45623299 
 -----------------------------------------------------------------------------------------
 
 
 Group                           Internal   Switching     Leakage       Total  Percentage 
                                 Power      Power         Power         Power  (%)        
 -----------------------------------------------------------------------------------------
-Sequential                        0.4686   0.0004766    0.008105      0.4772       84.14 
-Macro                          0.0002582    1.61e-06           0   0.0002598     0.04581 
+Sequential                        0.4245   0.0003505    0.007667      0.4326       94.81 
+Macro                          0.0003426   1.526e-06           0   0.0003441     0.07543 
 IO                                     0           0           0           0           0 
-Combinational                    0.04711     0.02509     0.01749     0.08969       15.81 
+Combinational                   0.003604    0.002359     0.01736     0.02332       5.112 
 Clock (Combinational)                  0           0           0           0           0 
 Clock (Sequential)                     0           0           0           0           0 
 -----------------------------------------------------------------------------------------
-Total                              0.516     0.02557      0.0256      0.5671         100 
+Total                             0.4285    0.002711     0.02503      0.4562         100 
 -----------------------------------------------------------------------------------------
 
 
 Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
                                 Power      Power         Power         Power  (%)        
 -----------------------------------------------------------------------------------------
-VDD                      1.32      0.516     0.02557      0.0256      0.5671         100 
+VDD                      1.32     0.4285    0.002711     0.02503      0.4562         100 
 
 
 -----------------------------------------------------------------------------------------
 *	Power Distribution Summary: 
-*                Highest Average Power:        soc/spimemio/g8772 (CLKMX2X8):        0.0006287 
-*                Highest Leakage Power: soc/cpu/genblk2.pcpi_div/g7431 (CLKBUFX20):        2.292e-06 
-*          Total Cap:      8.92302e-11 F
-*          Total instances in design: 62529
+*                Highest Average Power:        soc/spimemio/g7369 (CLKMX2X8):        0.0006295 
+*                Highest Leakage Power:         accel/mem/g159576 (BUFX20):        2.293e-06 
+*          Total Cap:      9.24836e-11 F
+*          Total instances in design: 57809
 *          Total instances in design with no power:     0
 *          Total instances in design with no activity:     0
 *          Total Fillers and Decap:     0
