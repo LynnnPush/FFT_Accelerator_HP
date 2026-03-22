@@ -20,12 +20,11 @@
 ###       iomem_accel[0]  : Config & Status (reset/enable/done)
 ###       iomem_accel[1]  : Number of entries (N)
 ###       iomem_accel[2]  : Number of FFT stages (log2 N)
-###       iomem_accel[3]  : tw_re[0]
-###       iomem_accel[4]  : tw_im[0]
+###       iomem_accel[3]  : {tw_im[0][15:0], tw_re[0][15:0]}   (packed)
+###       iomem_accel[4]  : {tw_im[1][15:0], tw_re[1][15:0]}
 ###         ...
-###       iomem_accel[33] : tw_re[15]
-###       iomem_accel[34] : tw_im[15]
-###       MEM[0] starts at iomem_accel[35] = 0x0300_008C
+###       iomem_accel[18] : {tw_im[15][15:0], tw_re[15][15:0]}
+###       MEM[0] starts at iomem_accel[19] = 0x0300_004C
 ###
 ###     TU Delft ET4351 - 2026 Project
 ###
@@ -48,11 +47,12 @@
 /* Twiddle CSR registers start at word index 3 */
 #define ACCEL_TW_CSR_START_ADDR     (ACCEL_BASE_ADDR + 3*4)                          /* 0x0300000C */
 
-/* Number of config + twiddle CSR registers = 3 + 2*(N/2) = 3 + 32 = 35 */
-#define NUM_CSR_REGS                35
+/* Number of config + twiddle CSR registers = 3 + N/2 = 3 + 16 = 19
+ * (each twiddle CSR packs tw_re[15:0] in lower half, tw_im[15:0] in upper half) */
+#define NUM_CSR_REGS                19
 
 /* SRAM data region starts right after all CSR registers */
-#define ACCEL_SRAM_START_ADDR       (ACCEL_BASE_ADDR + NUM_CSR_REGS * 4)             /* 0x0300008C */
+#define ACCEL_SRAM_START_ADDR       (ACCEL_BASE_ADDR + NUM_CSR_REGS * 4)             /* 0x0300004C */
 
 /* CSR control/status bits */
 #define MASK_CSR_RESET              (1 << 0)
@@ -94,13 +94,16 @@ static void accelerated_fft(int n, int chunks, int bits) {
      *            (OUTSIDE the timed accelerator window)
      *
      *  Flash layout: [N_total, chunks, tw_re0, tw_im0, tw_re1, ...]
-     *  Number of twiddle values = entries_per_chunk = 2*half_n
+     *  Each CSR word packs one twiddle pair: {tw_im[15:0], tw_re[15:0]}
      * ================================================================ */
     int flash_offset = 2;   /* skip N_total and chunks at flash[0], flash[1] */
 
-    for (int i = 0; i < num_tw_values; i++) {
+    for (int i = 0; i < half_n; i++) {
+        uint32_t tw_re = (uint32_t)read_dec_entry_from_flash(flash_offset + 2*i)     & 0xFFFF;
+        uint32_t tw_im = (uint32_t)read_dec_entry_from_flash(flash_offset + 2*i + 1) & 0xFFFF;
+        uint32_t packed = (tw_im << 16) | tw_re;
         uint32_t csr_address = ACCEL_TW_CSR_START_ADDR + i * 4;
-        (*(volatile int*)(csr_address)) = read_dec_entry_from_flash(flash_offset + i);
+        (*(volatile uint32_t*)(csr_address)) = packed;
     }
     flash_offset += num_tw_values;
 

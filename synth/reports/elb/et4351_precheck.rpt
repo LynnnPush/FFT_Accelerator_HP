@@ -25,112 +25,152 @@ No unloaded combinational element in 'et4351'
 
  Assigns
  ------- 
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_lo[2]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_lo[1]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_lo[0]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[3]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[2]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[1]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[0]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[31]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[30]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[29]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[28]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[27]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[26]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[25]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[24]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[23]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[22]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[21]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[20]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[19]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[18]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[17]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[16]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[15]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[14]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[13]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[12]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[11]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[10]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[9]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[8]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[7]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[6]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[5]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH32_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[11]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[10]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[9]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[8]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[7]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[6]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[5]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[4]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[3]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[2]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[1]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[0]' in module add_signed_3832
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[11]' in module add_signed_3832_3370
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[10]' in module add_signed_3832_3370
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[9]' in module add_signed_3832_3370
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[8]' in module add_signed_3832_3370
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[7]' in module add_signed_3832_3370
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[6]' in module add_signed_3832_3370
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[5]' in module add_signed_3832_3370
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[4]' in module add_signed_3832_3370
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[3]' in module add_signed_3832_3370
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[2]' in module add_signed_3832_3370
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[1]' in module add_signed_3832_3370
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/subports_out/Z[0]' in module add_signed_3832_3370
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_lo[3]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_lo[1]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_lo[0]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[3]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[2]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[1]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[0]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[31]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[30]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[29]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[28]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[27]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[26]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[25]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[24]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[31]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[30]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[29]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[28]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[27]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[26]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[25]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[24]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[31]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[30]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[29]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[28]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[27]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[26]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[25]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[24]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[23]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[22]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[21]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[20]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[19]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[18]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[17]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[16]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[15]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[14]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[13]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[12]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[11]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[10]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[9]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[8]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[7]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[6]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[5]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata[30]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata[29]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata[28]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata[27]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata[26]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata[25]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata[24]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata[23]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[31]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[30]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[29]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[28]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[27]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[26]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[25]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[24]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[31]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[30]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[29]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[28]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[27]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[26]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[25]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[24]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[11]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[10]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[9]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[8]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[7]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[6]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[5]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[4]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[3]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[2]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[1]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[0]' in module add_signed_3869
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[11]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[10]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[9]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[8]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[7]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[6]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[5]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[4]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[3]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[2]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[1]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[0]' in module add_signed_3869_3216
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/ADD_UNS_OP/subports_out/Z[0]' in module add_unsigned_252_6
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1810_23/subports_out/Z[0]' in module add_unsigned_252_6_3421
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1312_30/subports_out/Z[0]' in module add_unsigned_2759
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1810_23/subports_out/Z[0]' in module add_unsigned_252_6_3270
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1312_30/subports_out/Z[0]' in module add_unsigned_2674
 Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_3_/subports_out/soc_i' in module bidir_buf
 Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_3_/subports_out/io' in module bidir_buf
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/soc_i' in module bidir_buf_2773
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/io' in module bidir_buf_2773
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/soc_i' in module bidir_buf_2774
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/io' in module bidir_buf_2774
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/soc_i' in module bidir_buf_2775
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/io' in module bidir_buf_2775
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/dec_sub_1445_19/subports_out/Z[0]' in module decrement_unsigned_1209_2199
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_118_40/subports_out/Z[0]' in module increment_unsigned_3675_3827
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_74_31/subports_out/Z[0]' in module increment_unsigned_3675_3827_3193
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/inc_add_1568_34/subports_out/Z[0]' in module increment_unsigned_921_2205
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/inc_add_1435_40/subports_out/Z[0]' in module increment_unsigned_921_2205_3371
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_297_45/subports_out/Z[47]' in module mult_signed_7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_297_45/subports_out/Z[46]' in module mult_signed_7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_297_45/subports_out/Z[45]' in module mult_signed_7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_297_45/subports_out/Z[44]' in module mult_signed_7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[47]' in module mult_signed_7_3363
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[46]' in module mult_signed_7_3363
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[45]' in module mult_signed_7_3363
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[44]' in module mult_signed_7_3363
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_290_45/subports_out/Z[47]' in module mult_signed_7_3364
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_290_45/subports_out/Z[46]' in module mult_signed_7_3364
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_290_45/subports_out/Z[45]' in module mult_signed_7_3364
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_290_45/subports_out/Z[44]' in module mult_signed_7_3364
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_289_45/subports_out/Z[47]' in module mult_signed_7_3365
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_289_45/subports_out/Z[46]' in module mult_signed_7_3365
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_289_45/subports_out/Z[45]' in module mult_signed_7_3365
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_289_45/subports_out/Z[44]' in module mult_signed_7_3365
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_288_45/subports_out/Z[47]' in module mult_signed_7_3366
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_288_45/subports_out/Z[46]' in module mult_signed_7_3366
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_288_45/subports_out/Z[45]' in module mult_signed_7_3366
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_288_45/subports_out/Z[44]' in module mult_signed_7_3366
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[47]' in module mult_signed_7_3367
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[46]' in module mult_signed_7_3367
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[45]' in module mult_signed_7_3367
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[44]' in module mult_signed_7_3367
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_299_45/subports_out/Z[47]' in module mult_signed_7_3368
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_299_45/subports_out/Z[46]' in module mult_signed_7_3368
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_299_45/subports_out/Z[45]' in module mult_signed_7_3368
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_299_45/subports_out/Z[44]' in module mult_signed_7_3368
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_298_45/subports_out/Z[47]' in module mult_signed_7_3369
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_298_45/subports_out/Z[46]' in module mult_signed_7_3369
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_298_45/subports_out/Z[45]' in module mult_signed_7_3369
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_298_45/subports_out/Z[44]' in module mult_signed_7_3369
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/soc_i' in module bidir_buf_2688
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/io' in module bidir_buf_2688
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/soc_i' in module bidir_buf_2689
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/io' in module bidir_buf_2689
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/soc_i' in module bidir_buf_2690
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/io' in module bidir_buf_2690
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/dec_sub_1445_19/subports_out/Z[0]' in module decrement_unsigned_1199_2189
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_118_40/subports_out/Z[0]' in module increment_unsigned_3712_3864
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_74_31/subports_out/Z[0]' in module increment_unsigned_3712_3864_3045
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/inc_add_1568_34/subports_out/Z[0]' in module increment_unsigned_911_2195
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/inc_add_1435_40/subports_out/Z[0]' in module increment_unsigned_911_2195_3217
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[39]' in module mult_signed_7
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[38]' in module mult_signed_7
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[37]' in module mult_signed_7
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[36]' in module mult_signed_7
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_294_45/subports_out/Z[39]' in module mult_signed_7_3209
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_294_45/subports_out/Z[38]' in module mult_signed_7_3209
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_294_45/subports_out/Z[37]' in module mult_signed_7_3209
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_294_45/subports_out/Z[36]' in module mult_signed_7_3209
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_293_45/subports_out/Z[39]' in module mult_signed_7_3210
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_293_45/subports_out/Z[38]' in module mult_signed_7_3210
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_293_45/subports_out/Z[37]' in module mult_signed_7_3210
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_293_45/subports_out/Z[36]' in module mult_signed_7_3210
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[39]' in module mult_signed_7_3211
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[38]' in module mult_signed_7_3211
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[37]' in module mult_signed_7_3211
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[36]' in module mult_signed_7_3211
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[39]' in module mult_signed_7_3212
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[38]' in module mult_signed_7_3212
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[37]' in module mult_signed_7_3212
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[36]' in module mult_signed_7_3212
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_303_45/subports_out/Z[39]' in module mult_signed_7_3213
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_303_45/subports_out/Z[38]' in module mult_signed_7_3213
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_303_45/subports_out/Z[37]' in module mult_signed_7_3213
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_303_45/subports_out/Z[36]' in module mult_signed_7_3213
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_302_45/subports_out/Z[39]' in module mult_signed_7_3214
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_302_45/subports_out/Z[38]' in module mult_signed_7_3214
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_302_45/subports_out/Z[37]' in module mult_signed_7_3214
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_302_45/subports_out/Z[36]' in module mult_signed_7_3214
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[39]' in module mult_signed_7_3215
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[38]' in module mult_signed_7_3215
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[37]' in module mult_signed_7_3215
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[36]' in module mult_signed_7_3215
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/trap' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/mem_instr' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/mem_addr[1]' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
@@ -422,33 +462,33 @@ Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/i
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/subports_out/cfgreg_do[0]' in module spimemio
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/subports_out/dout_tag[3]' in module spimemio_xfer
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/subports_out/flash_io3_oe' in module spimemio_xfer
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[11]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[10]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[9]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[8]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[7]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[6]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[5]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[4]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[3]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[2]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[1]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/subports_out/Z[0]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[11]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[10]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[9]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[8]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[7]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[6]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[5]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[4]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[3]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[2]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[1]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/subports_out/Z[0]' in module sub_signed_3362
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2510_60/subports_out/Z[0]' in module sub_unsigned_2768
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2529_27_Y_minus_2531_27/subports_out/Z[0]' in module sub_unsigned_2768_3426
-Total number of assign statements in design 'et4351' : 423
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[11]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[10]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[9]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[8]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[7]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[6]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[5]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[4]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[3]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[2]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[1]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[0]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[11]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[10]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[9]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[8]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[7]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[6]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[5]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[4]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[3]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[2]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[1]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[0]' in module sub_signed_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2510_60/subports_out/Z[0]' in module sub_unsigned_2683
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2529_27_Y_minus_2531_27/subports_out/Z[0]' in module sub_unsigned_2683_3275
+Total number of assign statements in design 'et4351' : 463
 
  Undriven Port(s)/Pin(s)
  ------------------------
@@ -530,70 +570,22 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[8] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[7] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[6] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[511] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[510] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[509] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[508] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[507] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[506] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[505] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[504] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[503] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[502] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[501] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[500] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[499] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[498] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[497] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[496] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[479] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[478] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[477] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[476] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[475] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[474] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[473] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[472] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[471] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[470] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[469] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[468] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[467] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[466] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[465] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[464] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[447] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[446] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[445] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[444] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[443] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[442] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[441] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[440] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[439] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[438] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[437] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[436] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[435] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[434] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[433] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[432] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[415] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[414] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[413] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[412] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[411] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[410] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[409] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[408] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[407] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[406] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[405] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[404] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[403] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[402] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[401] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[400] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[31] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[30] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[29] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[28] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[27] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[26] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[25] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[24] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[31] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[30] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[29] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[28] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[27] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[26] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[25] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[24] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[383] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[382] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[381] 	 (fanout : 0)
@@ -602,38 +594,22 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[378] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[377] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[376] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[375] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[374] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[373] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[372] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[371] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[370] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[369] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[368] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[351] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[350] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[349] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[348] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[347] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[346] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[345] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[344] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[343] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[342] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[341] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[340] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[339] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[338] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[337] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[336] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[319] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[318] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[317] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[316] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[315] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[314] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[313] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[312] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[359] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[358] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[357] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[356] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[355] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[354] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[353] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[352] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[335] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[334] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[333] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[332] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[331] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[330] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[329] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[328] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[311] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[310] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[309] 	 (fanout : 0)
@@ -650,38 +626,22 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[282] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[281] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[280] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[279] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[278] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[277] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[276] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[275] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[274] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[273] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[272] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[255] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[254] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[253] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[252] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[251] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[250] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[249] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[248] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[247] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[246] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[245] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[244] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[243] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[242] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[241] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[240] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[223] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[222] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[221] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[220] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[219] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[218] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[217] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[216] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[263] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[262] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[261] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[260] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[259] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[258] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[257] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[256] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[239] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[238] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[237] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[236] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[235] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[234] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[233] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[232] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[215] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[214] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[213] 	 (fanout : 0)
@@ -698,38 +658,22 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[186] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[185] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[184] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[183] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[182] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[181] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[180] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[179] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[178] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[177] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[176] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[159] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[158] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[157] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[156] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[155] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[154] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[153] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[152] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[151] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[150] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[149] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[148] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[147] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[146] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[145] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[144] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[127] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[126] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[125] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[124] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[123] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[122] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[121] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[120] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[167] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[166] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[165] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[164] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[163] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[162] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[161] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[160] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[143] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[142] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[141] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[140] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[139] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[138] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[137] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[136] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[119] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[118] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[117] 	 (fanout : 0)
@@ -746,38 +690,22 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[90] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[89] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[88] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[87] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[86] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[85] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[84] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[83] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[82] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[81] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[80] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[63] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[62] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[61] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[60] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[59] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[58] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[57] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[56] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[55] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[54] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[53] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[52] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[51] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[50] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[49] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[48] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[24] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[71] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[70] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[69] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[68] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[67] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[66] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[65] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[64] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[47] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[46] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[45] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[44] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[43] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[42] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[41] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[40] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[23] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[22] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[21] 	 (fanout : 0)
@@ -786,70 +714,6 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[18] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[17] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[16] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[511] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[510] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[509] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[508] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[507] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[506] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[505] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[504] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[503] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[502] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[501] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[500] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[499] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[498] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[497] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[496] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[479] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[478] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[477] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[476] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[475] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[474] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[473] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[472] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[471] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[470] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[469] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[468] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[467] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[466] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[465] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[464] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[447] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[446] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[445] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[444] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[443] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[442] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[441] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[440] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[439] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[438] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[437] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[436] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[435] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[434] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[433] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[432] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[415] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[414] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[413] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[412] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[411] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[410] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[409] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[408] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[407] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[406] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[405] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[404] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[403] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[402] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[401] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[400] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[383] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[382] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[381] 	 (fanout : 0)
@@ -858,38 +722,22 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[378] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[377] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[376] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[375] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[374] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[373] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[372] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[371] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[370] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[369] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[368] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[351] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[350] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[349] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[348] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[347] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[346] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[345] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[344] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[343] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[342] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[341] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[340] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[339] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[338] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[337] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[336] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[319] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[318] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[317] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[316] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[315] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[314] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[313] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[312] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[359] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[358] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[357] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[356] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[355] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[354] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[353] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[352] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[335] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[334] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[333] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[332] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[331] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[330] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[329] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[328] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[311] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[310] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[309] 	 (fanout : 0)
@@ -906,38 +754,22 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[282] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[281] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[280] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[279] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[278] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[277] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[276] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[275] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[274] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[273] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[272] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[255] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[254] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[253] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[252] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[251] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[250] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[249] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[248] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[247] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[246] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[245] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[244] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[243] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[242] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[241] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[240] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[223] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[222] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[221] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[220] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[219] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[218] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[217] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[216] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[263] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[262] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[261] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[260] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[259] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[258] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[257] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[256] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[239] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[238] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[237] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[236] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[235] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[234] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[233] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[232] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[215] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[214] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[213] 	 (fanout : 0)
@@ -954,38 +786,22 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[186] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[185] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[184] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[183] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[182] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[181] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[180] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[179] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[178] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[177] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[176] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[159] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[158] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[157] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[156] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[155] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[154] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[153] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[152] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[151] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[150] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[149] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[148] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[147] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[146] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[145] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[144] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[127] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[126] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[125] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[124] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[123] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[122] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[121] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[120] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[167] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[166] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[165] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[164] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[163] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[162] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[161] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[160] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[143] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[142] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[141] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[140] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[139] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[138] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[137] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[136] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[119] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[118] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[117] 	 (fanout : 0)
@@ -1002,38 +818,22 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[90] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[89] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[88] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[87] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[86] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[85] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[84] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[83] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[82] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[81] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[80] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[63] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[62] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[61] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[60] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[59] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[58] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[57] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[56] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[55] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[54] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[53] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[52] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[51] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[50] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[49] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[48] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[24] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[71] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[70] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[69] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[68] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[67] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[66] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[65] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[64] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[47] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[46] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[45] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[44] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[43] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[42] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[41] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[40] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[23] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[22] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[21] 	 (fanout : 0)
@@ -1042,6 +842,15 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[18] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[17] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_im_packed[16] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen[3] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata[31] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata[30] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata[29] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata[28] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata[27] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata[26] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata[25] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata[24] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_lo[3] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_lo[2] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_lo[1] 	 (fanout : 0)
@@ -1049,30 +858,46 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_hi[3] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_hi[2] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_hi[1] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/pins_in/B[47] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/pins_in/B[46] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/pins_in/B[45] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/pins_in/B[44] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/pins_in/B[47] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/pins_in/B[46] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/pins_in/B[45] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP13103/pins_in/B[44] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/pins_in/A[47] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/pins_in/A[46] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/pins_in/A[45] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/pins_in/A[44] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/pins_in/B[47] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/pins_in/B[46] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/pins_in/B[45] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_309_44/pins_in/B[44] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/pins_in/A[47] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/pins_in/A[46] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/pins_in/A[45] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/pins_in/A[44] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/pins_in/B[47] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/pins_in/B[46] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/pins_in/B[45] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_316_44/pins_in/B[44] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[31] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[30] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[29] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[28] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[27] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[26] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[25] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[24] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[31] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[30] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[29] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[28] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[27] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[26] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[25] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[24] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/pins_in/B[39] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/pins_in/B[38] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/pins_in/B[37] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/pins_in/B[36] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/pins_in/B[39] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/pins_in/B[38] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/pins_in/B[37] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/pins_in/B[36] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/A[39] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/A[38] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/A[37] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/A[36] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/B[39] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/B[38] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/B[37] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/B[36] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/A[39] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/A[38] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/A[37] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/A[36] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/B[39] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/B[38] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/B[37] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/B[36] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/ADD_UNS_OP/pins_in/A[0] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/ADD_UNS_OP/pins_in/B[0] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1312_30/pins_in/A[0] 	 (fanout : 0)
@@ -1248,7 +1073,7 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_118_40/pins_in/CI 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/pins_in/din_tag[3] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/pins_in/din_cont 	 (fanout : 0)
-Total number of constant hierarchical pins in design 'et4351' : 749
+Total number of constant hierarchical pins in design 'et4351' : 534
 
 No constant connected ports in design 'et4351'
 
@@ -1385,7 +1210,7 @@ Empty Modules                                0
 Unloaded Port(s)                             0
 Unloaded Sequential Pin(s)                   0
 Unloaded Combinational Pin(s)                0
-Assigns                                    423
+Assigns                                    463
 Undriven Port(s)                             0
 Undriven Leaf Pin(s)                         0
 Undriven hierarchical pin(s)                 0
@@ -1395,7 +1220,7 @@ Multidriven hierarchical Pin(s)              0
 Multidriven unloaded net(s)                  0
 Constant Port(s)                             0
 Constant Leaf Pin(s)                         8
-Constant hierarchical Pin(s)               749
+Constant hierarchical Pin(s)               534
 Preserved leaf instance(s)                   4
 Preserved hierarchical instance(s)           0
 Feedthrough Modules(s)                       0

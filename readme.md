@@ -2,7 +2,7 @@
 
 **TU Delft — ET4351 Digital VLSI Design, 2026 Project**
 
-A high-performance 32-point FFT hardware accelerator integrated into a PicoRV32 RISC-V SoC, targeting the SAED32 45nm technology library. The design combines five architectural optimisations to achieve a **~24× end-to-end latency reduction** over the baseline — from 61 µs down to ~2.5 µs per audio chunk.
+A high-performance 32-point FFT hardware accelerator integrated into a PicoRV32 RISC-V SoC, targeting the SAED32 45nm technology library. The design combines six architectural optimisations to achieve a **~24× end-to-end latency reduction** over the baseline — from 61 µs down to ~2.5 µs per audio chunk, while reducing accelerator area by ~24% through datapath narrowing.
 
 For the general project structure, SoC architecture, design flow, and tooling, refer to the [README on the `baseline` branch](../../tree/baseline).
 
@@ -17,23 +17,26 @@ For the general project structure, SoC architecture, design flow, and tooling, r
 | 3 | **2× parallel butterfly units** | Two independent butterfly datapaths process two operations per cycle, halving the issue count per FFT stage from 16 to 8 cycles. |
 | 4 | **4-stage micro-pipeline** | The butterfly datapath is split into FETCH → MUL1 → MUL2 → ADD stages. A new butterfly pair enters every clock cycle (1-throughput). Each FFT stage completes in 8 fetch + 3 drain = **11 cycles**. The pipeline also breaks the long combinational multiply-add chain, enabling much higher clock frequencies. |
 | 5 | **Wide paired memory port** | A 64-bit paired SRAM interface reads/writes one complete complex sample (re + im) per cycle during LOAD and STORE phases, **halving the memory transfer time** from 128 to 64 cycles. |
+| 6 | **24-bit datapath narrowing** | Internal data width narrowed from 32 to 24 bits. Reduces register-file, memory, and multiplier area (24×16 instead of 32×16 per multiply). 24-bit range (±8M) is more than sufficient for the audio FFT signal path. |
 
-Additionally, twiddle factors are stored as **16-bit Q12** values (narrowed from 32-bit data width), reducing multiplier input width and CSR area.
+Twiddle factors are stored as **16-bit Q12** values and packed into CSR registers — each 32-bit CSR word holds one complete twiddle pair `{tw_im[15:0], tw_re[15:0]}`, halving the CSR count from 32 to 16 (total CSR registers: 35→19).
 
 ---
 
 ## Comparison with Baseline
 
-| Metric | Baseline | This Design | Improvement |
-|---|---|---|---|
-| FSM states | 13 (per-element SRAM R/W) | 5 (`INIT → LOAD → COMPUTE → STORE → FINISH`) | Simplified control |
-| Compute architecture | Single butterfly, fully combinational, all via SRAM | 2× parallel, 4-stage pipelined, register-file | 1-throughput pipeline |
-| Twiddle source | Read from SRAM (inside timed window) | CSR registers (firmware preload before enable) | Zero twiddle load cycles |
-| Memory interface | 32-bit single-port (1 word/cycle) | 32-bit narrow (CPU) + 64-bit wide paired (FFT) | 2 words/cycle during LOAD/STORE |
-| SRAM depth | 128 words (data + twiddles) | 64 words (data only) | 50% SRAM reduction |
-| Cycles per chunk (N=32) | 732 | **121** | **6.05× fewer cycles** |
-| Synthesis-verified frequency | ~12 MHz | **48 MHz** (with margin for PnR) | **4× higher frequency** |
-| Latency per chunk | ~61 µs | **~2.5 µs** | **~24× faster** |
+| Metric | Baseline | This Design |
+|---|---|---|
+| FSM states | 13 (per-element SRAM R/W) | 5 (`INIT → LOAD → COMPUTE → STORE → FINISH`) |
+| Compute architecture | Single butterfly, fully combinational, all via SRAM | 2× parallel, 4-stage pipelined, 24-bit register-file |
+| Twiddle source | Read from SRAM (inside timed window) | Packed CSR registers (firmware preload before enable) |
+| Memory interface | 32-bit single-port (1 word/cycle) | 32-bit narrow (CPU) + 64-bit wide paired (FFT) |
+| Internal data width | 32-bit | 24-bit (sign-extended at bus boundaries) |
+| SRAM depth | 128 words (data + twiddles) | 64 words (data only) |
+| CSR registers | N/A | 19 (3 config + 16 packed twiddle) |
+| Cycles per chunk (N=32) | 732 | **121** |
+| Synthesis-verified frequency | ~12 MHz | **48 MHz** (with margin for PnR) |
+| Latency per chunk | ~61 µs | **~2.5 µs** |
 
 The ~24× speedup comes from two independent and multiplicative axes: 6× fewer cycles **and** 4× higher clock frequency.
 
@@ -92,17 +95,17 @@ For the first time, COMPUTE (45.5%) is the **dominant phase**, overtaking LOAD+S
 
 | Module | Cell Count | Cell Area (µm²) | Net Area (µm²) | Total Area (µm²) |
 |---|---|---|---|---|
-| **et4351 (top)** | 57,809 | 223,229 | 76,390 | **299,619** |
-| accelerator | 44,965 | 146,864 | 60,113 | 206,976 |
-| &emsp;fft | 29,258 | 92,556 | 39,604 | 132,160 |
-| &emsp;mem (64-deep) | 10,780 | 37,280 | 14,384 | 51,664 |
-| picosoc | 12,837 | 76,318 | 16,049 | 92,367 |
+| **et4351 (top)** | 48,211 | 186,376 | 63,043 | **249,419** |
+| accelerator | 35,397 | 110,079 | 46,742 | 156,821 |
+| &emsp;fft | 24,341 | 72,285 | 32,339 | 104,624 |
+| &emsp;mem (64-deep) | 8,271 | 28,115 | 10,901 | 39,016 |
+| picosoc | 12,808 | 76,251 | 16,027 | 92,278 |
 
-Total SoC area is **299,619 µm²**, well within the 596 × 596 µm = **355,362 µm² core budget** (84.3% utilisation).
+Total SoC area is **249,419 µm²**, well within the 596 × 596 µm = **355,362 µm² core budget** (70.2% utilisation). The 24-bit datapath narrowing reduced accelerator area by ~24% compared to the 32-bit variant (156,821 vs 206,976 µm²).
 
 ### Timing
 
-All 10 worst paths are in the **SPI flash → PicoRV32 interface**, not in the accelerator or its memory. Worst slack is **+3,418 ps** — timing is met with substantial margin. The wide memory port's 32:1 mux trees do not appear anywhere in the critical path, confirming that the paired-address scheme is not a timing concern at 48 MHz.
+All 10 worst paths are in the **SPI flash → PicoRV32 interface**, not in the accelerator or its memory. Worst slack is **+2,950 ps** — timing is met with margin. The wide memory port's 32:1 mux trees and 24-bit sign-extension logic do not appear in the critical path.
 
 ---
 
@@ -113,10 +116,10 @@ All 10 worst paths are in the **SPI flash → PicoRV32 interface**, not in the a
 | `0x0300_0000` | `iomem_accel[0]` | Config & Status (reset / enable / done) |
 | `0x0300_0004` | `iomem_accel[1]` | Number of entries (N) |
 | `0x0300_0008` | `iomem_accel[2]` | Number of FFT stages (log₂ N) |
-| `0x0300_000C – 0x0300_0088` | `iomem_accel[3..34]` | 16 twiddle pairs (tw\_re[k], tw\_im[k], k=0..15) |
-| `0x0300_008C+` | `MEM[0..63]` | SRAM data region (64 words, re/im interleaved) |
+| `0x0300_000C – 0x0300_0048` | `iomem_accel[3..18]` | 16 packed twiddle CSRs: `{tw_im[k][15:0], tw_re[k][15:0]}`, k=0..15 |
+| `0x0300_004C+` | `MEM[0..63]` | SRAM data region (64 × 24-bit words, re/im interleaved) |
 
-The wrapper packs the 32 twiddle CSR words into flat buses (`tw_re_packed`, `tw_im_packed`) via a generate block, giving the FFT core combinational access to any twiddle by index.
+Each twiddle CSR packs both the real and imaginary parts of one twiddle factor into a single 32-bit word (lower 16 bits = tw\_re, upper 16 bits = tw\_im). The wrapper unpacks and sign-extends these to 24-bit (`DATA_WIDTH`) flat buses (`tw_re_packed`, `tw_im_packed`) via a generate block, giving the FFT core combinational access to any twiddle by index.
 
 ---
 
@@ -124,10 +127,10 @@ The wrapper packs the 32 twiddle CSR words into flat buses (`tw_re_packed`, `tw_
 
 | File | Role |
 |---|---|
-| `src/design/accelerator_fft.v` | FFT core: register-file, 2× parallel, 4-stage pipeline, wide memory interface |
-| `src/design/accelerator.v` | Wrapper: 35-register CSR array, twiddle bus packing, dual-port memory routing |
-| `src/design/accelerator_mem.v` | Dual-interface SRAM: 32-bit narrow (CPU) + 64-bit wide paired (FFT) |
-| `firmware/accel_audio.c` | Firmware: CSR twiddle preload, data orchestration |
+| `src/design/accelerator_fft.v` | FFT core: 24-bit register-file, 2× parallel, 4-stage pipeline, wide memory interface |
+| `src/design/accelerator.v` | Wrapper: 19-register CSR array, packed twiddle unpacking/sign-extension, dual-port memory routing |
+| `src/design/accelerator_mem.v` | Dual-interface SRAM: 32-bit narrow (CPU) + 64-bit wide paired (FFT), 24-bit internal storage with sign extension |
+| `firmware/accel_audio.c` | Firmware: packed twiddle CSR preload (`{tw_im, tw_re}`), data orchestration |
 | `firmware/fft.py` | Python golden-reference FFT with global twiddle table |
 | `src/sdc/et4351.sdc` | Timing constraints (48 MHz target, 250 ps clock uncertainty) |
 
@@ -138,9 +141,10 @@ The wrapper packs the 32 twiddle CSR words into flat buses (`tw_re_packed`, `tw_
 - **Two independent speedup axes.** Cycle count reduction (732→121) and clock frequency increase (~12→48 MHz) are orthogonal improvements that multiply together for the ~24× overall latency reduction. The HP target has no clock frequency constraint — any valid combination works.
 - **Memory bandwidth was the binding constraint.** In the baseline, SRAM reads/writes consumed ~88% of cycles. The wide paired memory port halves the transfer time, while the register-file architecture confines SRAM access to bulk LOAD/STORE phases.
 - **Zero-bubble stage transitions.** The pipeline advance condition (`pipe_last_drain`) fires on the same posedge as the last ADD/writeback. This eliminates the dead cycle that would otherwise occur between consecutive FFT stages, saving 5 cycles total (1 per stage).
-- **16-bit twiddle factors.** Narrowing twiddles from 32-bit to 16-bit reduces multiplier input width (32×16 instead of 32×32), saving area on the 8 multipliers per butterfly pair (16 total). Q12 precision is preserved since twiddle values never exceed ±1.0 in magnitude.
-- **Synthesis constraint rationale.** The 48 MHz target (4× baseline) is chosen to leave sufficient timing margin (~3.4 ns worst slack) for place-and-route wire delays. Prior experiments showed that even ~1.3 ns synthesis slack can result in setup violations after PnR without further optimisation passes.
-- **Drop-in compatible interface.** The CPU-facing interface (memory map, CSR layout, `iomem` handshake) is a strict superset of the baseline. The firmware (`accel_audio.c`) and verification scripts work without modification.
+- **24-bit datapath.** The internal data width is narrowed from 32 to 24 bits, reducing register-file storage (64 × 24 vs 64 × 32), memory cell area, and multiplier size (24×16 instead of 32×16). Sign extension to/from the 32-bit bus interface is handled at the memory and store-phase boundaries. The 24-bit signed range (±8,388,607) is sufficient for the audio FFT signal path.
+- **Packed twiddle CSRs.** Each twiddle pair (tw\_re + tw\_im, both 16-bit Q12) is packed into a single 32-bit CSR word by firmware, halving the CSR count from 32 to 16. The wrapper unpacks and sign-extends to 24-bit for the FFT core.
+- **Synthesis constraint rationale.** The 48 MHz target (4× baseline) is chosen to leave sufficient timing margin (~2.9 ns worst slack) for place-and-route wire delays.
+- **Drop-in compatible interface.** The firmware (`accel_audio.c`) handles twiddle packing and the updated memory map transparently. Verification scripts work without modification.
 
 ---
 
@@ -155,7 +159,7 @@ Course staff and contributors across multiple years:
 
 PicoRV32 and PicoSoC by Claire Xenia Wolf ([YosysHQ/picorv32](https://github.com/YosysHQ/picorv32)).
 
-HP accelerator optimisations (register-file, twiddle preload, parallel butterflies, micro-pipeline, wide memory port) by the HP RTL architecture team.
+HP accelerator optimisations (register-file, twiddle preload, parallel butterflies, micro-pipeline, wide memory port, 24-bit datapath narrowing) by the HP RTL architecture team.
 
 ---
 

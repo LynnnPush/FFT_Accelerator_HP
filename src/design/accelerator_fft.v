@@ -23,7 +23,7 @@
 
 module accelerator_fft #(
     parameter integer LOG_MAX_N   = 32,
-    parameter integer MEM_WIDTH   = 32,
+    parameter integer MEM_WIDTH   = 24,
     parameter integer ADDR_WIDTH  = 32,
     parameter integer NUM_TW      = 16,
     parameter integer TW_WIDTH    = 16,
@@ -94,7 +94,7 @@ module accelerator_fft #(
   reg [2:0] next_state;
 
   /*========================================================================================
-        DATA REGISTER FILE  (32 complex values = 64 × 32-bit)
+        DATA REGISTER FILE  (32 complex values = 64 × 24-bit)
     ========================================================================================*/
   reg signed [MEM_WIDTH-1:0] data_re [0:MAX_FFT_N-1];
   reg signed [MEM_WIDTH-1:0] data_im [0:MAX_FFT_N-1];
@@ -197,12 +197,15 @@ module accelerator_fft #(
       end
 
       // STORE: drive pair address + both write data + strobes
+      //   Sign-extend MEM_WIDTH → 32 for the bus interface
       S_STORE_DATA: begin
         accel_mem_pair_addr = {{(32-IO_CNT_W){1'b0}}, io_cnt};
         accel_mem_wstrb_lo  = 4'b1111;
         accel_mem_wstrb_hi  = 4'b1111;
-        accel_mem_wdata_lo  = data_re[io_cnt[IDX_W-1:0]];      // even word → re
-        accel_mem_wdata_hi  = data_im[io_cnt[IDX_W-1:0]];      // odd  word → im
+        accel_mem_wdata_lo  = {{(32-MEM_WIDTH){data_re[io_cnt[IDX_W-1:0]][MEM_WIDTH-1]}},
+                               data_re[io_cnt[IDX_W-1:0]]};
+        accel_mem_wdata_hi  = {{(32-MEM_WIDTH){data_im[io_cnt[IDX_W-1:0]][MEM_WIDTH-1]}},
+                               data_im[io_cnt[IDX_W-1:0]]};
       end
 
       default: ;

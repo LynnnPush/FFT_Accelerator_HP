@@ -20,64 +20,60 @@
 
 module accelerator_mem #(
     parameter  MEM_DEPTH       = 64,
-    localparam ADDR_MEM_WIDTH  = $clog2(MEM_DEPTH),        // = 6 for 64
-    localparam PAIR_ADDR_WIDTH = ADDR_MEM_WIDTH - 1         // = 5 for 64 (32 pairs)
+    parameter  DATA_WIDTH      = 24,                         // internal word width
+    localparam ADDR_MEM_WIDTH  = $clog2(MEM_DEPTH),          // = 6 for 64
+    localparam PAIR_ADDR_WIDTH = ADDR_MEM_WIDTH - 1           // = 5 for 64 (32 pairs)
 ) (
     input  wire                      clk,
 
-    // ---- Narrow port (32-bit, CPU path) ----
+    // ---- Narrow port (32-bit bus, CPU path) ----
     input  wire [3:0]                wen,
     input  wire [ADDR_MEM_WIDTH-1:0] addr,
     input  wire [31:0]               wdata,
     output wire [31:0]               rdata,
 
-    // ---- Wide port (64-bit paired, FFT path) ----
-    input  wire [3:0]                 wen_lo,       // write strobe for even word (re)
-    input  wire [3:0]                 wen_hi,       // write strobe for odd  word (im)
-    input  wire [PAIR_ADDR_WIDTH-1:0] pair_addr,    // selects which pair (0..31)
-    input  wire [31:0]                wdata_lo,     // write data for even word (re)
-    input  wire [31:0]                wdata_hi,     // write data for odd  word (im)
-    output wire [31:0]                rdata_lo,     // read data  even word (re)
-    output wire [31:0]                rdata_hi      // read data  odd  word (im)
+    // ---- Wide port (paired, FFT path) ----
+    input  wire [3:0]                 wen_lo,
+    input  wire [3:0]                 wen_hi,
+    input  wire [PAIR_ADDR_WIDTH-1:0] pair_addr,
+    input  wire [31:0]                wdata_lo,
+    input  wire [31:0]                wdata_hi,
+    output wire [31:0]                rdata_lo,
+    output wire [31:0]                rdata_hi
 );
 
-    reg [31:0] mem [0:MEM_DEPTH-1];
+    reg [DATA_WIDTH-1:0] mem [0:MEM_DEPTH-1];
 
-    // ---------- Narrow read (combinational) ----------
-    assign rdata = mem[addr];
+    // ---------- Narrow read (sign-extend DATA_WIDTH → 32) ----------
+    assign rdata    = {{(32-DATA_WIDTH){mem[addr][DATA_WIDTH-1]}}, mem[addr]};
 
-    // ---------- Wide read (combinational, paired) ----------
-    //   pair_addr selects a pair; bit-0 distinguishes even(re)/odd(im).
-    //   Synthesis sees 32 × (MEM_DEPTH/2):1 mux trees per output bit,
-    //   sharing the pair_addr decode between rdata_lo and rdata_hi.
-    assign rdata_lo = mem[{pair_addr, 1'b0}];   // even address → re
-    assign rdata_hi = mem[{pair_addr, 1'b1}];   // odd  address → im
+    // ---------- Wide read (sign-extend DATA_WIDTH → 32, paired) ----------
+    assign rdata_lo = {{(32-DATA_WIDTH){mem[{pair_addr, 1'b0}][DATA_WIDTH-1]}},
+                       mem[{pair_addr, 1'b0}]};
+    assign rdata_hi = {{(32-DATA_WIDTH){mem[{pair_addr, 1'b1}][DATA_WIDTH-1]}},
+                       mem[{pair_addr, 1'b1}]};
 
     // ---------- Write logic ----------
-    //   Narrow and wide writes are mutually exclusive by system protocol.
-    //   The wrapper guarantees wen==0 when wen_lo/wen_hi are active,
-    //   and vice versa.
+    //   Only the lower DATA_WIDTH bits (3 bytes) are stored.
+    //   Byte-3 writes (wen[3] / wen_lo[3] / wen_hi[3]) are ignored.
     wire [ADDR_MEM_WIDTH-1:0] wide_addr_lo = {pair_addr, 1'b0};
     wire [ADDR_MEM_WIDTH-1:0] wide_addr_hi = {pair_addr, 1'b1};
 
     always @(posedge clk) begin
-        // Narrow write (CPU path)
+        // Narrow write (CPU path) — 3 bytes
         if (wen[0]) mem[addr][ 7: 0] <= wdata[ 7: 0];
         if (wen[1]) mem[addr][15: 8] <= wdata[15: 8];
         if (wen[2]) mem[addr][23:16] <= wdata[23:16];
-        if (wen[3]) mem[addr][31:24] <= wdata[31:24];
 
-        // Wide write — even word (re)
+        // Wide write — even word (re), 3 bytes
         if (wen_lo[0]) mem[wide_addr_lo][ 7: 0] <= wdata_lo[ 7: 0];
         if (wen_lo[1]) mem[wide_addr_lo][15: 8] <= wdata_lo[15: 8];
         if (wen_lo[2]) mem[wide_addr_lo][23:16] <= wdata_lo[23:16];
-        if (wen_lo[3]) mem[wide_addr_lo][31:24] <= wdata_lo[31:24];
 
-        // Wide write — odd word (im)
+        // Wide write — odd word (im), 3 bytes
         if (wen_hi[0]) mem[wide_addr_hi][ 7: 0] <= wdata_hi[ 7: 0];
         if (wen_hi[1]) mem[wide_addr_hi][15: 8] <= wdata_hi[15: 8];
         if (wen_hi[2]) mem[wide_addr_hi][23:16] <= wdata_hi[23:16];
-        if (wen_hi[3]) mem[wide_addr_hi][31:24] <= wdata_hi[31:24];
     end
 
 endmodule

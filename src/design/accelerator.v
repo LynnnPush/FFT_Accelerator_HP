@@ -36,12 +36,14 @@ module accelerator (
   localparam LOG_MAX_FFT_STAGES = $clog2(LOG_MAX_N);    // = 5
   localparam MAX_FFT_N          = 32;
   localparam NUM_TW             = MAX_FFT_N / 2;        // = 16
+  localparam DATA_WIDTH         = 24;                    // narrowed from 32
 
-  // CSR configuration registers:  3 config + 2*NUM_TW twiddle words
+  // CSR configuration registers:  3 config + NUM_TW packed twiddle words
+  //   Each twiddle CSR packs {tw_im[15:0], tw_re[15:0]} into one 32-bit word
   localparam NUM_CFG_REGS   = 3;
-  localparam NUM_TW_REGS    = 2 * NUM_TW;               // = 32
-  localparam NUM_REGS       = NUM_CFG_REGS + NUM_TW_REGS; // = 35
-  localparam NUM_REGS_WIDTH = $clog2(NUM_REGS);         // = 6
+  localparam NUM_TW_REGS    = NUM_TW;                    // = 16  (was 2*NUM_TW=32)
+  localparam NUM_REGS       = NUM_CFG_REGS + NUM_TW_REGS; // = 19  (was 35)
+  localparam NUM_REGS_WIDTH = $clog2(NUM_REGS);          // = 5
 
   // Accelerator internal memory (data only — no twiddles)
   localparam MEM_DEPTH  = 2 * MAX_FFT_N;                // = 64  (re+im interleaved)
@@ -91,15 +93,21 @@ module accelerator (
 
   /*----------------------------------------------------------------------------------------
         TWIDDLE PACKING:  CSR array → flat bus for FFT core
+        Each CSR word: {tw_im[15:0], tw_re[15:0]}  — packed by firmware
+        Unpack into DATA_WIDTH-strided flat buses, sign-extending 16→DATA_WIDTH
     ----------------------------------------------------------------------------------------*/
-  wire [32 * NUM_TW - 1 : 0] tw_re_packed;
-  wire [32 * NUM_TW - 1 : 0] tw_im_packed;
+  wire [DATA_WIDTH * NUM_TW - 1 : 0] tw_re_packed;
+  wire [DATA_WIDTH * NUM_TW - 1 : 0] tw_im_packed;
 
   genvar gi;
   generate
     for (gi = 0; gi < NUM_TW; gi = gi + 1) begin : gen_tw_pack
-      assign tw_re_packed[32*gi +: 32] = iomem_accel[NUM_CFG_REGS + 2*gi];
-      assign tw_im_packed[32*gi +: 32] = iomem_accel[NUM_CFG_REGS + 2*gi + 1];
+      assign tw_re_packed[DATA_WIDTH*gi +: DATA_WIDTH] =
+          {{(DATA_WIDTH-16){iomem_accel[NUM_CFG_REGS + gi][15]}},
+           iomem_accel[NUM_CFG_REGS + gi][15:0]};
+      assign tw_im_packed[DATA_WIDTH*gi +: DATA_WIDTH] =
+          {{(DATA_WIDTH-16){iomem_accel[NUM_CFG_REGS + gi][31]}},
+           iomem_accel[NUM_CFG_REGS + gi][31:16]};
     end
   endgenerate
 
@@ -107,7 +115,8 @@ module accelerator (
         MEMORY AND ACCELERATOR INSTANTIATION
     ----------------------------------------------------------------------------------------*/
   accelerator_mem #(
-      .MEM_DEPTH(MEM_DEPTH)
+      .MEM_DEPTH  (MEM_DEPTH),
+      .DATA_WIDTH (DATA_WIDTH)
   ) mem (
       .clk       (clk),
 
@@ -129,7 +138,7 @@ module accelerator (
 
   accelerator_fft #(
       .LOG_MAX_N (LOG_MAX_N),
-      .MEM_WIDTH (32),
+      .MEM_WIDTH (DATA_WIDTH),
       .ADDR_WIDTH(ADDR_WIDTH),
       .NUM_TW    (NUM_TW)
   ) fft (

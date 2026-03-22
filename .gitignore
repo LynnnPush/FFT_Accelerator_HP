@@ -26,6 +26,9 @@ simv.daidir/
 work/
 *.history
 
+# QuestaSim session transcripts (regenerated every run)
+*/transcript
+
 # ==========================================
 # Synthesis & Place and Route (synth, pnr)
 # ==========================================
@@ -43,9 +46,51 @@ genus.cmd*
 *.svf
 alib-52/
 
+# Formal verification auto-generated files
+synth/fv/
+
+# Genus user-specific session timestamps
+.rs_*.tstamp
+
 # Tool commands and journals
 innovus.cmd*
 *.jou
+
+# ==========================================
+# PnR auto-generated / intermediate files
+# ==========================================
+# Auto-generated Voltus power constraint files
+pnr/power*.db.cnstr.tcl
+
+# RC extraction model binary
+pnr/rc_model.bin
+
+# Temp PnR files
+pnr/.et4351_*.slk.gz
+pnr/.nano_eco_diode.list*
+
+# Top-level pti/voltus duplicates (already in powerReports/ and finalReports/)
+pnr/static_VDD.ptiavg
+pnr/static_VSS.ptiavg
+pnr/voltus_power.ptifiles
+pnr/voltus_power_missing_netnames.rpt
+pnr/power.rpt
+
+# Intermediate timing report subdirectories (finalReports has signoff data)
+pnr/timingReports/place_opt_design.rpt/
+pnr/timingReports/postCTSHold/
+pnr/timingReports/postCTSHold_hold/
+pnr/timingReports/postRoute/
+pnr/timingReports/postRouteHold/
+pnr/timingReports/postRouteHold_hold/
+pnr/timingReports/postRoute_hold/
+pnr/timingReports/preCTS/
+pnr/timingReports/preCTS_hold/
+pnr/timingReports/route/
+pnr/timingReports/route_hold/
+
+# Old report backups
+*.old
 
 # ==========================================
 # General OS & Temp Files
@@ -53,6 +98,14 @@ innovus.cmd*
 *~
 core.*
 .nfs*
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Compiled firmware binary (rebuildable via make)
+firmware/accel_audio.elf
+
 # Extra EDA tool logs and environments
 *.log*
 .cce.env*
