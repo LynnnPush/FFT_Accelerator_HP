@@ -1,0 +1,3 @@
+algorithm,mse,mean_abs_error,max_abs_error,snr_db,melody_accuracy_pct,complex_mults_per_block
+main_global_twiddle,314.3385,12.7877,51.2640,76.3830,91.67,80
+baseline_chained_twiddle,2825.2865,32.5807,159.5306,66.8464,91.67,160
