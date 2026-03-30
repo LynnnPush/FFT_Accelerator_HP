@@ -8,7 +8,7 @@
 ###       - The CPU accesses accelerator_mem through the NARROW port
 ###         (32-bit, byte-enable writes, combinational reads).
 ###       - The FFT core accesses accelerator_mem through the WIDE port
-###         (64-bit paired, one re+im pair per cycle).
+###         (48-bit paired = 2×24-bit, one re+im pair per cycle).
 ###       - No shared address/data mux — the two paths are independent
 ###         and mutually exclusive (CPU writes before enable, FFT after).
 ###
@@ -70,14 +70,15 @@ module accelerator (
   wire [31:0]           cpu_mem_wdata;
   wire [ 3:0]           cpu_mem_wstrb;
 
-  // ---- Wide port signals (FFT → memory) ----
-  wire [ 3:0] accel_mem_wstrb_lo;
-  wire [ 3:0] accel_mem_wstrb_hi;
-  wire [31:0] accel_mem_rdata_lo;
-  wire [31:0] accel_mem_rdata_hi;
-  wire [31:0] accel_mem_wdata_lo;
-  wire [31:0] accel_mem_wdata_hi;
-  wire [31:0] accel_mem_pair_addr;
+  // ---- Wide port signals (FFT → memory, DATA_WIDTH per word) ----
+  localparam WSTRB_WIDTH = DATA_WIDTH / 8;          // = 3 for 24-bit
+  wire [WSTRB_WIDTH-1:0]  accel_mem_wstrb_lo;
+  wire [WSTRB_WIDTH-1:0]  accel_mem_wstrb_hi;
+  wire [DATA_WIDTH-1:0]   accel_mem_rdata_lo;
+  wire [DATA_WIDTH-1:0]   accel_mem_rdata_hi;
+  wire [DATA_WIDTH-1:0]   accel_mem_wdata_lo;
+  wire [DATA_WIDTH-1:0]   accel_mem_wdata_hi;
+  wire [31:0]             accel_mem_pair_addr;
 
   // CPU → accelerator access decoding
   wire iomem_access_accelerator;

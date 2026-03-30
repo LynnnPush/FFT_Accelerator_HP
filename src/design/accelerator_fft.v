@@ -41,12 +41,12 @@ module accelerator_fft #(
     input wire [LOG_MAX_FFT_STAGES-1:0] fft_stages,
 
     // Wide paired SRAM interface  (reads/writes one complex pair per cycle)
-    output reg  [ 3:0] accel_mem_wstrb_lo,          // write strobe, even word (re)
-    output reg  [ 3:0] accel_mem_wstrb_hi,          // write strobe, odd  word (im)
-    input  wire [31:0] accel_mem_rdata_lo,           // read data,  even word (re)
-    input  wire [31:0] accel_mem_rdata_hi,           // read data,  odd  word (im)
-    output reg  [31:0] accel_mem_wdata_lo,           // write data, even word (re)
-    output reg  [31:0] accel_mem_wdata_hi,           // write data, odd  word (im)
+    output reg  [ 2:0] accel_mem_wstrb_lo,          // write strobe, even word (re)
+    output reg  [ 2:0] accel_mem_wstrb_hi,          // write strobe, odd  word (im)
+    input  wire [MEM_WIDTH-1:0] accel_mem_rdata_lo,  // read data,  even word (re)
+    input  wire [MEM_WIDTH-1:0] accel_mem_rdata_hi,  // read data,  odd  word (im)
+    output reg  [MEM_WIDTH-1:0] accel_mem_wdata_lo,  // write data, even word (re)
+    output reg  [MEM_WIDTH-1:0] accel_mem_wdata_hi,  // write data, odd  word (im)
     output reg  [31:0] accel_mem_pair_addr,          // pair index (not byte address)
 
     // Pre-loaded twiddle factors from CSR
@@ -184,10 +184,10 @@ module accelerator_fft #(
         OUTPUT LOGIC  (Wide SRAM Read/Write — combinational)
     ========================================================================================*/
   always @(*) begin
-    accel_mem_wstrb_lo = 4'b0000;
-    accel_mem_wstrb_hi = 4'b0000;
-    accel_mem_wdata_lo = 32'd0;
-    accel_mem_wdata_hi = 32'd0;
+    accel_mem_wstrb_lo = 3'b000;
+    accel_mem_wstrb_hi = 3'b000;
+    accel_mem_wdata_lo = {MEM_WIDTH{1'b0}};
+    accel_mem_wdata_hi = {MEM_WIDTH{1'b0}};
     accel_mem_pair_addr = 32'd0;
 
     case (state_reg)
@@ -200,12 +200,10 @@ module accelerator_fft #(
       //   Sign-extend MEM_WIDTH → 32 for the bus interface
       S_STORE_DATA: begin
         accel_mem_pair_addr = {{(32-IO_CNT_W){1'b0}}, io_cnt};
-        accel_mem_wstrb_lo  = 4'b1111;
-        accel_mem_wstrb_hi  = 4'b1111;
-        accel_mem_wdata_lo  = {{(32-MEM_WIDTH){data_re[io_cnt[IDX_W-1:0]][MEM_WIDTH-1]}},
-                               data_re[io_cnt[IDX_W-1:0]]};
-        accel_mem_wdata_hi  = {{(32-MEM_WIDTH){data_im[io_cnt[IDX_W-1:0]][MEM_WIDTH-1]}},
-                               data_im[io_cnt[IDX_W-1:0]]};
+        accel_mem_wstrb_lo  = 3'b111;
+        accel_mem_wstrb_hi  = 3'b111;
+        accel_mem_wdata_lo  = data_re[io_cnt[IDX_W-1:0]];
+        accel_mem_wdata_hi  = data_im[io_cnt[IDX_W-1:0]];
       end
 
       default: ;

@@ -2,7 +2,7 @@
 ###
 ### Register-file memory for the accelerator (Wide-port variant)
 ###
-###     Adds a 64-bit paired (wide) interface alongside the original 32-bit
+###     Adds a 48-bit paired (wide) interface alongside the original 32-bit
 ###     narrow interface.  The narrow port serves CPU (iomem) accesses;
 ###     the wide port serves the FFT core's LOAD/STORE phases.
 ###
@@ -22,7 +22,8 @@ module accelerator_mem #(
     parameter  MEM_DEPTH       = 64,
     parameter  DATA_WIDTH      = 24,                         // internal word width
     localparam ADDR_MEM_WIDTH  = $clog2(MEM_DEPTH),          // = 6 for 64
-    localparam PAIR_ADDR_WIDTH = ADDR_MEM_WIDTH - 1           // = 5 for 64 (32 pairs)
+    localparam PAIR_ADDR_WIDTH = ADDR_MEM_WIDTH - 1,          // = 5 for 64 (32 pairs)
+    localparam WSTRB_WIDTH     = DATA_WIDTH / 8               // = 3 for 24-bit
 ) (
     input  wire                      clk,
 
@@ -32,14 +33,14 @@ module accelerator_mem #(
     input  wire [31:0]               wdata,
     output wire [31:0]               rdata,
 
-    // ---- Wide port (paired, FFT path) ----
-    input  wire [3:0]                 wen_lo,
-    input  wire [3:0]                 wen_hi,
+    // ---- Wide port (paired, FFT path) — DATA_WIDTH per word ----
+    input  wire [WSTRB_WIDTH-1:0]     wen_lo,
+    input  wire [WSTRB_WIDTH-1:0]     wen_hi,
     input  wire [PAIR_ADDR_WIDTH-1:0] pair_addr,
-    input  wire [31:0]                wdata_lo,
-    input  wire [31:0]                wdata_hi,
-    output wire [31:0]                rdata_lo,
-    output wire [31:0]                rdata_hi
+    input  wire [DATA_WIDTH-1:0]      wdata_lo,
+    input  wire [DATA_WIDTH-1:0]      wdata_hi,
+    output wire [DATA_WIDTH-1:0]      rdata_lo,
+    output wire [DATA_WIDTH-1:0]      rdata_hi
 );
 
     reg [DATA_WIDTH-1:0] mem [0:MEM_DEPTH-1];
@@ -47,15 +48,13 @@ module accelerator_mem #(
     // ---------- Narrow read (sign-extend DATA_WIDTH → 32) ----------
     assign rdata    = {{(32-DATA_WIDTH){mem[addr][DATA_WIDTH-1]}}, mem[addr]};
 
-    // ---------- Wide read (sign-extend DATA_WIDTH → 32, paired) ----------
-    assign rdata_lo = {{(32-DATA_WIDTH){mem[{pair_addr, 1'b0}][DATA_WIDTH-1]}},
-                       mem[{pair_addr, 1'b0}]};
-    assign rdata_hi = {{(32-DATA_WIDTH){mem[{pair_addr, 1'b1}][DATA_WIDTH-1]}},
-                       mem[{pair_addr, 1'b1}]};
+    // ---------- Wide read (direct DATA_WIDTH, paired) ----------
+    assign rdata_lo = mem[{pair_addr, 1'b0}];
+    assign rdata_hi = mem[{pair_addr, 1'b1}];
 
     // ---------- Write logic ----------
-    //   Only the lower DATA_WIDTH bits (3 bytes) are stored.
-    //   Byte-3 writes (wen[3] / wen_lo[3] / wen_hi[3]) are ignored.
+    //   Narrow port: only the lower DATA_WIDTH bits (3 bytes) are stored; wen[3] is ignored.
+    //   Wide port: DATA_WIDTH-wide, all bytes are meaningful.
     wire [ADDR_MEM_WIDTH-1:0] wide_addr_lo = {pair_addr, 1'b0};
     wire [ADDR_MEM_WIDTH-1:0] wide_addr_hi = {pair_addr, 1'b1};
 

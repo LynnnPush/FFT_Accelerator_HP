@@ -25,29 +25,11 @@ No unloaded combinational element in 'et4351'
 
  Assigns
  ------- 
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_lo[3]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_lo[1]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_lo[0]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[3]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[2]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[1]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wstrb_hi[0]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[31]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[30]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[29]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[28]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[27]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[26]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[25]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_lo[24]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[31]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[30]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[29]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[28]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[27]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[26]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[25]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_wdata_hi[24]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[31]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[30]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/subports_out/accel_mem_pair_addr[29]' in module accelerator_fft_LOG_MAX_N32_MEM_WIDTH24_ADDR_WIDTH6_NUM_TW16
@@ -83,22 +65,6 @@ Encountered an assign statement at subport '/designs/et4351/instances_hier/accel
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata[25]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata[24]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata[23]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[31]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[30]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[29]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[28]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[27]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[26]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[25]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_lo[24]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[31]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[30]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[29]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[28]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[27]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[26]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[25]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/mem/subports_out/rdata_hi[24]' in module accelerator_mem_MEM_DEPTH64_DATA_WIDTH24
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[11]' in module add_signed_3869
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[10]' in module add_signed_3869
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[9]' in module add_signed_3869
@@ -111,66 +77,66 @@ Encountered an assign statement at subport '/designs/et4351/instances_hier/accel
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[2]' in module add_signed_3869
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[1]' in module add_signed_3869
 Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/subports_out/Z[0]' in module add_signed_3869
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[11]' in module add_signed_3869_3216
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[10]' in module add_signed_3869_3216
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[9]' in module add_signed_3869_3216
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[8]' in module add_signed_3869_3216
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[7]' in module add_signed_3869_3216
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[6]' in module add_signed_3869_3216
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[5]' in module add_signed_3869_3216
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[4]' in module add_signed_3869_3216
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[3]' in module add_signed_3869_3216
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[2]' in module add_signed_3869_3216
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[1]' in module add_signed_3869_3216
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[0]' in module add_signed_3869_3216
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[11]' in module add_signed_3869_3207
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[10]' in module add_signed_3869_3207
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[9]' in module add_signed_3869_3207
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[8]' in module add_signed_3869_3207
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[7]' in module add_signed_3869_3207
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[6]' in module add_signed_3869_3207
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[5]' in module add_signed_3869_3207
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[4]' in module add_signed_3869_3207
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[3]' in module add_signed_3869_3207
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[2]' in module add_signed_3869_3207
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[1]' in module add_signed_3869_3207
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/subports_out/Z[0]' in module add_signed_3869_3207
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/ADD_UNS_OP/subports_out/Z[0]' in module add_unsigned_252_6
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1810_23/subports_out/Z[0]' in module add_unsigned_252_6_3270
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1312_30/subports_out/Z[0]' in module add_unsigned_2674
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1810_23/subports_out/Z[0]' in module add_unsigned_252_6_3261
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1312_30/subports_out/Z[0]' in module add_unsigned_2665
 Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_3_/subports_out/soc_i' in module bidir_buf
 Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_3_/subports_out/io' in module bidir_buf
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/soc_i' in module bidir_buf_2688
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/io' in module bidir_buf_2688
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/soc_i' in module bidir_buf_2689
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/io' in module bidir_buf_2689
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/soc_i' in module bidir_buf_2690
-Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/io' in module bidir_buf_2690
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/soc_i' in module bidir_buf_2679
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_0_/subports_out/io' in module bidir_buf_2679
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/soc_i' in module bidir_buf_2680
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_1_/subports_out/io' in module bidir_buf_2680
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/soc_i' in module bidir_buf_2681
+Encountered an assign statement at subport '/designs/et4351/instances_hier/flash_bufs_2_/subports_out/io' in module bidir_buf_2681
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/dec_sub_1445_19/subports_out/Z[0]' in module decrement_unsigned_1199_2189
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_118_40/subports_out/Z[0]' in module increment_unsigned_3712_3864
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_74_31/subports_out/Z[0]' in module increment_unsigned_3712_3864_3045
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_74_31/subports_out/Z[0]' in module increment_unsigned_3712_3864_3036
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/inc_add_1568_34/subports_out/Z[0]' in module increment_unsigned_911_2195
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/inc_add_1435_40/subports_out/Z[0]' in module increment_unsigned_911_2195_3217
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[39]' in module mult_signed_7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[38]' in module mult_signed_7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[37]' in module mult_signed_7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[36]' in module mult_signed_7
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_294_45/subports_out/Z[39]' in module mult_signed_7_3209
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_294_45/subports_out/Z[38]' in module mult_signed_7_3209
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_294_45/subports_out/Z[37]' in module mult_signed_7_3209
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_294_45/subports_out/Z[36]' in module mult_signed_7_3209
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_293_45/subports_out/Z[39]' in module mult_signed_7_3210
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_293_45/subports_out/Z[38]' in module mult_signed_7_3210
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_293_45/subports_out/Z[37]' in module mult_signed_7_3210
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_293_45/subports_out/Z[36]' in module mult_signed_7_3210
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[39]' in module mult_signed_7_3211
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[38]' in module mult_signed_7_3211
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[37]' in module mult_signed_7_3211
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[36]' in module mult_signed_7_3211
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[39]' in module mult_signed_7_3212
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[38]' in module mult_signed_7_3212
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[37]' in module mult_signed_7_3212
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[36]' in module mult_signed_7_3212
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_303_45/subports_out/Z[39]' in module mult_signed_7_3213
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_303_45/subports_out/Z[38]' in module mult_signed_7_3213
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_303_45/subports_out/Z[37]' in module mult_signed_7_3213
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_303_45/subports_out/Z[36]' in module mult_signed_7_3213
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_302_45/subports_out/Z[39]' in module mult_signed_7_3214
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_302_45/subports_out/Z[38]' in module mult_signed_7_3214
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_302_45/subports_out/Z[37]' in module mult_signed_7_3214
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_302_45/subports_out/Z[36]' in module mult_signed_7_3214
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[39]' in module mult_signed_7_3215
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[38]' in module mult_signed_7_3215
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[37]' in module mult_signed_7_3215
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[36]' in module mult_signed_7_3215
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/inc_add_1435_40/subports_out/Z[0]' in module increment_unsigned_911_2195_3208
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_298_45/subports_out/Z[39]' in module mult_signed_7
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_298_45/subports_out/Z[38]' in module mult_signed_7
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_298_45/subports_out/Z[37]' in module mult_signed_7
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_298_45/subports_out/Z[36]' in module mult_signed_7
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[39]' in module mult_signed_7_3200
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[38]' in module mult_signed_7_3200
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[37]' in module mult_signed_7_3200
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_292_45/subports_out/Z[36]' in module mult_signed_7_3200
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[39]' in module mult_signed_7_3201
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[38]' in module mult_signed_7_3201
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[37]' in module mult_signed_7_3201
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_291_45/subports_out/Z[36]' in module mult_signed_7_3201
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_290_45/subports_out/Z[39]' in module mult_signed_7_3202
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_290_45/subports_out/Z[38]' in module mult_signed_7_3202
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_290_45/subports_out/Z[37]' in module mult_signed_7_3202
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_290_45/subports_out/Z[36]' in module mult_signed_7_3202
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_289_45/subports_out/Z[39]' in module mult_signed_7_3203
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_289_45/subports_out/Z[38]' in module mult_signed_7_3203
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_289_45/subports_out/Z[37]' in module mult_signed_7_3203
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_289_45/subports_out/Z[36]' in module mult_signed_7_3203
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[39]' in module mult_signed_7_3204
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[38]' in module mult_signed_7_3204
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[37]' in module mult_signed_7_3204
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_301_45/subports_out/Z[36]' in module mult_signed_7_3204
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[39]' in module mult_signed_7_3205
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[38]' in module mult_signed_7_3205
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[37]' in module mult_signed_7_3205
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_300_45/subports_out/Z[36]' in module mult_signed_7_3205
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_299_45/subports_out/Z[39]' in module mult_signed_7_3206
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_299_45/subports_out/Z[38]' in module mult_signed_7_3206
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_299_45/subports_out/Z[37]' in module mult_signed_7_3206
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/mul_299_45/subports_out/Z[36]' in module mult_signed_7_3206
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/trap' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/mem_instr' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/subports_out/mem_addr[1]' in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR1024
@@ -462,33 +428,33 @@ Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/i
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/subports_out/cfgreg_do[0]' in module spimemio
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/subports_out/dout_tag[3]' in module spimemio_xfer
 Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/subports_out/flash_io3_oe' in module spimemio_xfer
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[11]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[10]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[9]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[8]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[7]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[6]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[5]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[4]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[3]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[2]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[1]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/subports_out/Z[0]' in module sub_signed
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[11]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[10]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[9]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[8]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[7]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[6]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[5]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[4]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[3]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[2]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[1]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/subports_out/Z[0]' in module sub_signed_3208
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2510_60/subports_out/Z[0]' in module sub_unsigned_2683
-Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2529_27_Y_minus_2531_27/subports_out/Z[0]' in module sub_unsigned_2683_3275
-Total number of assign statements in design 'et4351' : 463
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[11]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[10]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[9]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[8]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[7]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[6]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[5]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[4]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[3]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[2]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[1]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/subports_out/Z[0]' in module sub_signed
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[11]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[10]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[9]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[8]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[7]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[6]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[5]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[4]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[3]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[2]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[1]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/subports_out/Z[0]' in module sub_signed_3199
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2510_60/subports_out/Z[0]' in module sub_unsigned_2674
+Encountered an assign statement at subport '/designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/genblk2.pcpi_div/instances_hier/minus_2529_27_Y_minus_2531_27/subports_out/Z[0]' in module sub_unsigned_2674_3266
+Total number of assign statements in design 'et4351' : 429
 
  Undriven Port(s)/Pin(s)
  ------------------------
@@ -570,22 +536,6 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[8] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[7] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/number_data[6] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_lo[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/accel_mem_rdata_hi[24] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[383] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[382] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/pins_in/tw_re_packed[381] 	 (fanout : 0)
@@ -851,29 +801,11 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata[26] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata[25] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_lo[3] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_lo[2] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_lo[1] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_lo[0] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_hi[3] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_hi[2] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wen_hi[1] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_lo[24] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[31] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[30] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[29] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[28] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[27] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[26] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[25] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/mem/pins_in/wdata_hi[24] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/pins_in/B[39] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/pins_in/B[38] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP/pins_in/B[37] 	 (fanout : 0)
@@ -882,22 +814,22 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/pins_in/B[38] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/pins_in/B[37] 	 (fanout : 0)
 /designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/ADD_TC_OP12375/pins_in/B[36] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/A[39] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/A[38] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/A[37] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/A[36] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/B[39] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/B[38] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/B[37] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_312_44/pins_in/B[36] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/A[39] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/A[38] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/A[37] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/A[36] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/B[39] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/B[38] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/B[37] 	 (fanout : 0)
-/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_319_44/pins_in/B[36] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/pins_in/A[39] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/pins_in/A[38] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/pins_in/A[37] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/pins_in/A[36] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/pins_in/B[39] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/pins_in/B[38] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/pins_in/B[37] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_310_44/pins_in/B[36] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/pins_in/A[39] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/pins_in/A[38] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/pins_in/A[37] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/pins_in/A[36] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/pins_in/B[39] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/pins_in/B[38] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/pins_in/B[37] 	 (fanout : 0)
+/designs/et4351/instances_hier/accel/instances_hier/fft/instances_hier/sub_317_44/pins_in/B[36] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/ADD_UNS_OP/pins_in/A[0] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/ADD_UNS_OP/pins_in/B[0] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/cpu/instances_hier/add_1312_30/pins_in/A[0] 	 (fanout : 0)
@@ -1073,7 +1005,7 @@ design 'et4351' has the following constant input hierarchical pin(s)
 /designs/et4351/instances_hier/soc/instances_hier/simpleuart/instances_hier/inc_add_118_40/pins_in/CI 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/pins_in/din_tag[3] 	 (fanout : 0)
 /designs/et4351/instances_hier/soc/instances_hier/spimemio/instances_hier/xfer/pins_in/din_cont 	 (fanout : 0)
-Total number of constant hierarchical pins in design 'et4351' : 534
+Total number of constant hierarchical pins in design 'et4351' : 500
 
 No constant connected ports in design 'et4351'
 
@@ -1210,7 +1142,7 @@ Empty Modules                                0
 Unloaded Port(s)                             0
 Unloaded Sequential Pin(s)                   0
 Unloaded Combinational Pin(s)                0
-Assigns                                    463
+Assigns                                    429
 Undriven Port(s)                             0
 Undriven Leaf Pin(s)                         0
 Undriven hierarchical pin(s)                 0
@@ -1220,7 +1152,7 @@ Multidriven hierarchical Pin(s)              0
 Multidriven unloaded net(s)                  0
 Constant Port(s)                             0
 Constant Leaf Pin(s)                         8
-Constant hierarchical Pin(s)               534
+Constant hierarchical Pin(s)               500
 Preserved leaf instance(s)                   4
 Preserved hierarchical instance(s)           0
 Feedthrough Modules(s)                       0
