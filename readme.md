@@ -144,28 +144,29 @@ Each twiddle CSR packs both the real and imaginary parts of one twiddle factor i
 - **Two independent speedup axes.** Cycle count reduction (732→121) and clock frequency increase (~12→66.2 MHz) are orthogonal improvements that multiply together for the ~33× overall latency reduction. The HP target has no clock frequency constraint — any valid combination works.
 - **Memory bandwidth was the binding constraint.** In the baseline, accelerator memory reads/writes consumed ~88% of cycles. The wide paired memory port halves the transfer time, while the register-file architecture confines accelerator memory access to bulk LOAD/STORE phases.
 - **Zero-bubble stage transitions.** The pipeline advance condition (`pipe_last_drain`) fires on the same posedge as the last ADD/writeback. This eliminates the dead cycle that would otherwise occur between consecutive FFT stages, saving 5 cycles total (1 per stage).
-- **24-bit datapath.** The internal data width is narrowed from 32 to 24 bits, reducing register-file storage (64 × 24 vs 64 × 32), memory cell area, and multiplier size (24×16 instead of 32×16). Sign extension to/from the 32-bit bus interface is handled at the memory and store-phase boundaries. The 24-bit signed range (±8,388,607) is sufficient for the audio FFT signal path.
-- **Packed twiddle CSRs.** Each twiddle pair (tw\_re + tw\_im, both 16-bit Q12) is packed into a single 32-bit CSR word by firmware, halving the CSR count from 32 to 16. The wrapper unpacks and sign-extends to 24-bit for the FFT core.
-- **PnR-verified frequency.** The 66.2 MHz target (5.5× baseline) closes timing post-route with +226 ps setup slack and +15 ps hold slack — fully clean. Clock uncertainty is tightened to 150 ps.
-- **Drop-in compatible interface.** The firmware (`accel_audio.c`) handles twiddle packing and the updated memory map transparently. Verification scripts work without modification.
+- **24-bit datapath.** Narrowing from 32 to 24 bits saves area on every register, multiplier, and mux in the design. The 24-bit range (±8 M) exceeds what the audio signal path requires by a comfortable margin, and sign extension at the CPU bus boundary is trivial.
+- **Synthesis slack ≠ post-PnR slack.** ~1,300 ps of Genus slack at 60 MHz collapsed to a −185 ps setup violation after plain Innovus PnR. The lesson: always leave meaningful synthesis margin. The final target (48 MHz for D5, 66.2 MHz for the full design) was chosen to guarantee positive post-route slack.
+- **Twiddle quantization.** Precomputed twiddles use a single `round(cos/sin × 4096)` conversion in Python. Chained fixed-point multiplication in hardware accumulates error; precomputation avoids this entirely.
 
 ---
 
-## Authors & Acknowledgments
+## UVM Verification Infrastructure
 
-Course staff and contributors across multiple years:
+A UVM 1.2 testbench verifies the `accelerator` module in isolation, exercising the CPU-side `iomem` bus protocol. It runs on QuestaSim 2020.4 and lives under `src/testbench/uvm/`.
 
-- **May 2023**: Chang Gao, Charlotte Frenkel — Original baseline (counter accelerator)
-- **April 2024**: Nicolas Chauvaux, Douwe den Blanken — Sorting accelerator + memory interface
-- **Jan 2025**: Ang Li, Yizhuo Wu — Pathfinding accelerator
-- **Jan 2026**: Nicolas Chauvaux, Douwe den Blanken, Guilherme Guedes — FFT accelerator baseline
+The environment (`fft_env`) contains an active agent (driver → sequencer → monitor), a **DPI-C scoreboard** backed by a C reference model (`ref_model/fft_ref.c`) using ideal double-precision twiddles, a **functional coverage** collector, and a **white-box FSM coverage** component that samples `state_reg` on every clock edge. Two `bind`-based **SVA modules** enforce protocol invariants at compile time without modifying RTL: bus-access mutex during acceleration, FSM encoding legality, finish/enable handshake, and pipeline drain completeness.
 
-PicoRV32 and PicoSoC by Claire Xenia Wolf ([YosysHQ/picorv32](https://github.com/YosysHQ/picorv32)).
+### Test Suite
 
-HP accelerator optimisations (register-file, twiddle preload, parallel butterflies, micro-pipeline, wide memory port, 24-bit datapath narrowing) by the HP RTL architecture team.
+| Test | Stimulus | Purpose |
+|---|---|---|
+| `fft_smoke_test` | Single FFT with Q12 unit-circle twiddles | End-to-end sanity check |
+| `fft_impulse_test` | Kronecker delta at bin 0 | Uniform magnitude response |
+| `fft_random_test` | Configurable N random FFTs (`+N_RAND`) | Corner-case exploration |
+| `fft_coverage_test` | Directed patterns (DC, Nyquist, alternating, ramp, boundary) | Closes functional coverage bins |
+
+### Regression
+
+`make regress` (from `sim_behav/`) compiles once and runs all tests in parallel via `xargs -P`, with grep-based PASS/FAIL extraction and `vcover merge` into a single HTML coverage report. Current status: **8/8 PASS, 535+ transactions, 0 UVM_ERROR**, 69% merged coverage (93% functional bins, 100% FSM state/transition bins; the gap is auto-collected code coverage).
 
 ---
-
-## License
-
-This project is provided for educational use within the TU Delft ET4351 course. The PicoRV32/PicoSoC components are distributed under the ISC license (see source headers).
